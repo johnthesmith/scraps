@@ -17,7 +17,7 @@
 
 ## Варианты
 
-![Рассматриваемаые варианты](https://github.com/johnthesmith/scraps/blob/main/images/TimeZoneFrienOrFoe.jpg)
+![Рассматриваемаые варианты](https://github.com/johnthesmith/scraps/blob/main/images/TimeZoneFrienOrFoe.png)
 
 ### A. Таймозона на back
 
