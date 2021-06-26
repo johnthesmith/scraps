@@ -21,7 +21,6 @@
 ## Варианты
 Рассмотрим два варианта перевода времени из UTC+0 в локальную TZ клиента.
 
-![Рассматриваемаые варианты](//images/TimeZoneFrienOrFoe.png "")
 ![Рассматриваемаые варианты](https://github.com/johnthesmith/scraps/blob/main/images/TimeZoneFrienOrFoe.png)
 
 ### A. Таймозона на back
