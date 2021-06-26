@@ -17,7 +17,7 @@
 
 ## Варианты
 
-![Рассматриваемаые варианты](johnthesmith/scraps/blob/main/images/TimeZoneFrienOrFoe.jpg)
+![Рассматриваемаые варианты](https://github.com/johnthesmith/scraps/blob/main/images/TimeZoneFrienOrFoe.jpg)
 
 A. Конверсия момента времени в таймзону осуществляется на стороне Frend в Back сервисе.
 
