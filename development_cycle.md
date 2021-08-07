@@ -1,6 +1,6 @@
 # Цикл разработки
 
-https://github.com/johnthesmith/scraps/blob/main/images/DevelopmentCycle.png
+![Development Cycle]https://github.com/johnthesmith/scraps/blob/main/images/DevelopmentCycle.png
 
 ## Последовательность
 1. Постановщик описывает задачу.
