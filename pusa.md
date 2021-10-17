@@ -16,7 +16,7 @@ PHP, JS, Java, Go, Ruby, etc.
 ## Технология
 Pusа предлагает протокол обмена на базе минималистичного набора команд, выполняющих все необхдимые операциии.
 
-![Development Cycle](https://github.com/johnthesmith/scraps/blob/main/images/Pusa.jpg)
+![Pusa scheme](https://github.com/johnthesmith/scraps/blob/main/images/Pusa.jpg)
 
 1. При загрузке страницы браузер загружает ядро Pusa Front.
 0. Pusa Front направляет указанные события браузера (как то click, blur, focus, keypress) на Back посредством POST запроса.
