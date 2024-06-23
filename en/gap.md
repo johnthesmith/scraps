@@ -80,7 +80,7 @@ graph RL
     Alice
     --> |Services| Carlos
     --> |$| Dave
-    ---> |Services| Bob
+    ----> |Services| Bob
     --> |$| Alice
 ```
 
