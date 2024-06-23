@@ -1,10 +1,12 @@
 # About Gap
 
-**Gap** a tool for sharing formation about payments in the public space. **Gap**
+**Gap** a tool for sharing information about payments in the public space. **Gap**
 minimizes or elliminates cross-border payments. The system builds on voluntary
 exchange of the information about planed transactions. Any physical or a
 representative of a legal entity can leave information about planned payments. Gap
 stores this information and makes it available to other users upon request.
+
+
 
 ## How it works
 
@@ -87,6 +89,8 @@ and <span style="background-color:#00ccff">Blueland</span>. Transactions carried
 transactions between the parties is at the discretion of the participants. Gap performs exclusively informational 
 function and acquaints the parties.
 
+
+
 ## Search offers
 
 To search for a pair trade, the user must provide the following information:
@@ -99,6 +103,8 @@ To search for a pair trade, the user must provide the following information:
 Gap will match paired trades if available. The user leaves contacts for transactions of interest. In case the search is
 not gave results, the user can leave a request, which will be displayed to other participants.
 
+
+
 ## Offer
 
 To apply, you will need all the data specified in the search, and the contact of the participant who left the
@@ -106,6 +112,8 @@ application. It is this contact that will be presented to other users on the nex
 time a user leaves a contact.
 
 Gap will start publishing a new offer immediately.
+
+
 
 ## Registration
 
