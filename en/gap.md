@@ -79,7 +79,7 @@ graph RL
 
     Alice
     --> |Services| Carlos
-    --> |$| Dave
+    ---> |$| Dave
     --> |Services| Bob
     --> |$| Alice
 ```
