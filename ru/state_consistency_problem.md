@@ -58,11 +58,12 @@ cc --> |fail|erorr2(((error)))
 
 ```mermaid
 flowchart LR
-    b((b)) --> rs1
+    b((begin)) --> rs1
     rs1[read S1] --> cc{x}
+    cc --> |fail| e1(((error)))
     cc --> |exists| wS2[write S2]
     cc --> |empty| wS1[write S1] --> wS2
-    wS2 --> e((e))
+    wS2 --> e((end))
 ```
 
 
