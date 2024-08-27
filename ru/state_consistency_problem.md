@@ -66,7 +66,6 @@ flowchart LR
 ```
 
 
-
 # Ссылки
 
 1. [Общее решение проблемы сохранения состояний](general_solution_to_the_state_preservation_problem.md)
