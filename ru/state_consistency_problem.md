@@ -63,7 +63,7 @@ flowchart LR
     cc --> |fail| e1(((error)))
     cc --> |exists| wS2[write S2]
     cc --> |empty| wS1[write S1] --> wS2
-    wS2 --> e((end))
+    wS2 --> e(((end)))
 ```
 
 
