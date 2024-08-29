@@ -70,4 +70,3 @@ flowchart LR
 # Ссылки
 
 1. [Общее решение проблемы сохранения состояний](general_solution_to_the_state_preservation_problem.md)
-2. [Публикация на habr](https://habr.com/ru/sandbox/224334/)
