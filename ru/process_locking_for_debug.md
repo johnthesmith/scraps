@@ -26,9 +26,9 @@
 
 ## Аргументы
 
-1. file - имя файла блокировки;
-0. content - содержимое файла блокировки, определяемое разработчиком.
-
+1. string file - имя файла блокировки;
+0. string content - содержимое файла блокировки, определяемое разработчиком;
+0. function <bool ()> terminated - лямбда функция, возвращающая необходимость прерывания блокировки.
 
 
 ## Результат
@@ -43,7 +43,8 @@
 bool lock
 (
     string file,
-    string content
+    string content,
+    funciton <bool ()> terminated = null
 )
 {
     string result;
@@ -53,8 +54,12 @@ bool lock
         /* Создание файла */
         if( createFile( file, content ))
         {
-            /* Ожидание удаления файла */
-            while( fileExists( file ) )
+            /* Ожидание удаления файла или сигнала terminated */
+            while
+            (
+                fileExists( file ) && 
+                ( terminated == NULL || !terminated() ) 
+            )
             {
                 sleepMls( 100 );
             }
