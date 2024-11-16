@@ -1,4 +1,4 @@
-<p style="text-align:right;">
+<p style="text-align: right;">
     Для создания вселенной достаточно <br>
     множества пар натуральных чисел.
 </p>
