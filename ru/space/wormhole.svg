@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500"
+   height="400"
+   viewBox="0 0 132.29166 105.83333"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.1 (9b9bdc1480, 2023-11-25, custom)"
+   sodipodi:docname="wormhole.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.1075"
+     inkscape:cx="249.82206"
+     inkscape:cy="200"
+     inkscape:window-width="1914"
+     inkscape:window-height="1052"
+     inkscape:window-x="1920"
+     inkscape:window-y="22"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showgrid="false" />
+  <defs
+     id="defs1">
+    <rect
+       x="31.320433"
+       y="55.763312"
+       width="437.28245"
+       height="161.16001"
+       id="rect9" />
+    <marker
+       style="overflow:visible"
+       id="marker1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Dot"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         sodipodi:nodetypes="sssss"
+         id="path1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Dot"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Dot"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         d="M 5,0 C 5,2.76 2.76,5 0,5 -2.76,5 -5,2.76 -5,0 c 0,-2.76 2.3,-5 5,-5 2.76,0 5,2.24 5,5 z"
+         sodipodi:nodetypes="sssss"
+         id="path17" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:#ffffff;stroke:none;stroke-width:0.28231;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       x="80.602806"
+       y="38.393517"
+       id="text14"><tspan
+         sodipodi:role="line"
+         id="tspan14"
+         style="stroke-width:0.28231"
+         x="80.602806"
+         y="38.393517">p2</tspan></text>
+    <rect
+       style="fill:#000000;stroke:none;stroke-width:0.226;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="rect18"
+       width="132.29167"
+       height="105.83334"
+       x="-5.0862632e-06"
+       y="-1.0172526e-05"
+       sodipodi:insensitive="true" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:#ffffff;stroke:none;stroke-width:0.28231;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       x="20.907772"
+       y="48.079338"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="stroke-width:0.28231"
+         x="20.907772"
+         y="48.079338">p0</tspan></text>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:0.282;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;marker-start:url(#Dot);marker-mid:url(#marker1);marker-end:url(#Dot);paint-order:stroke fill markers"
+       d="M 114.27517,57.458778 103.30295,51.839995 93.72538,47.102569 81.384523,43.961487 67.235566,42.89708 52.668236,44.86526 37.740871,48.265237 25.862438,51.848448"
+       id="path13-5"
+       sodipodi:nodetypes="cccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:#ffffff;stroke:none;stroke-width:0.28231;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       x="114.65985"
+       y="53.415348"
+       id="text16"><tspan
+         sodipodi:role="line"
+         id="tspan16"
+         style="stroke-width:0.28231"
+         x="114.65985"
+         y="53.415348">p7</tspan></text>
+    <path
+       style="fill:none;stroke:#00ff00;stroke-width:0.282;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;marker-start:url(#Dot);marker-mid:url(#marker1);marker-end:url(#Dot);paint-order:stroke fill markers"
+       d="M 103.30295,51.839995 37.740871,48.265237"
+       id="path2"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:#ffffff;stroke:none;stroke-width:0.28231;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       x="34.23904"
+       y="44.763832"
+       id="text3"><tspan
+         sodipodi:role="line"
+         id="tspan3"
+         style="stroke-width:0.28231"
+         x="34.23904"
+         y="44.763832">p1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:#ffffff;stroke:none;stroke-width:0.28231;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       x="50.908813"
+       y="41.458267"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="stroke-width:0.28231"
+         x="50.908813"
+         y="41.458267">p2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:#ffffff;stroke:none;stroke-width:0.28231;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       x="66.246552"
+       y="38.041027"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="stroke-width:0.28231"
+         x="66.246552"
+         y="38.041027">p3</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:#ffffff;stroke:none;stroke-width:0.28231;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       x="80.532181"
+       y="38.393517"
+       id="text6"><tspan
+         sodipodi:role="line"
+         id="tspan6"
+         style="stroke-width:0.28231"
+         x="80.532181"
+         y="38.393517">p4</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:#ffffff;stroke:none;stroke-width:0.28231;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       x="94.612076"
+       y="42.192074"
+       id="text7"><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         style="stroke-width:0.28231"
+         x="94.612076"
+         y="42.192074">p5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:#ffffff;stroke:none;stroke-width:0.28231;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+       x="104.00797"
+       y="47.560219"
+       id="text8"><tspan
+         sodipodi:role="line"
+         id="tspan8"
+         style="stroke-width:0.28231"
+         x="104.00797"
+         y="47.560219">p6</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text9"
+       style="font-size:13.3333px;white-space:pre;shape-inside:url(#rect9);display:inline;fill:#ffffff;stroke:#ff0000;stroke-width:1.06583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;fill:#00ff00;stroke:none;stroke-width:0.282001;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
+       x="61.707325"
+       y="55.225246"
+       id="text10"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         style="fill:#00ff00;stroke:none;stroke-width:0.282"
+         x="61.707325"
+         y="55.225246">wormhole</tspan></text>
+  </g>
+</svg>
