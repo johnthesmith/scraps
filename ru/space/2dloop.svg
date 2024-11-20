@@ -34,27 +34,7 @@
      inkscape:current-layer="layer1"
      showgrid="false" />
   <defs
-     id="defs1">
-    <marker
-       style="overflow:visible"
-       id="ConcaveTriangle"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       inkscape:stockid="Concave triangle arrow"
-       markerWidth="1"
-       markerHeight="1"
-       viewBox="0 0 1 1"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         transform="scale(0.7)"
-         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
-         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
-         id="path20" />
-    </marker>
-  </defs>
+     id="defs1" />
   <g
      inkscape:label="Слой 1"
      inkscape:groupmode="layer"
@@ -242,37 +222,5 @@
          style="stroke-width:0.28231"
          x="33.339783"
          y="83.479599">p7</tspan></text>
-    <path
-       style="fill:none;stroke:#00ff00;stroke-width:0.282;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#ConcaveTriangle);paint-order:stroke fill markers"
-       d="M 40.649246,53.646936 C 42.590483,37.685418 54.323692,27.799504 70.461414,26.068354"
-       id="path19"
-       sodipodi:nodetypes="cc" />
-    <text
-       xml:space="preserve"
-       style="font-size:3.52777px;fill:#00ff00;stroke:none;stroke-width:0.282001;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
-       x="54.763157"
-       y="41.593803"
-       id="text20"><tspan
-         sodipodi:role="line"
-         id="tspan20"
-         style="fill:#00ff00;stroke-width:0.282"
-         x="54.763157"
-         y="41.593803">cw</tspan></text>
-    <path
-       style="fill:none;stroke:#ff0000;stroke-width:0.282;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;marker-end:url(#ConcaveTriangle);paint-order:stroke fill markers"
-       d="m 40.539092,58.903803 c 1.57e-4,17.399356 21.062379,27.376508 30.25902,27.455796"
-       id="path21"
-       sodipodi:nodetypes="cc" />
-    <text
-       xml:space="preserve"
-       style="font-size:3.52777px;fill:#ff0000;stroke:none;stroke-width:0.282001;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;paint-order:stroke fill markers"
-       x="56.481335"
-       y="72.932693"
-       id="text21"><tspan
-         sodipodi:role="line"
-         id="tspan21"
-         style="fill:#ff0000;stroke-width:0.282"
-         x="56.481335"
-         y="72.932693">ccw</tspan></text>
   </g>
 </svg>
