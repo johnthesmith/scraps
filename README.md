@@ -1,15 +1,17 @@
-# scraps
+# Scraps
 
-1. Проект содержит разнообразные рабочие статьи и заметки. 
-2. Тексты могут содержать ошибки.
+[ru](ru/README.md)
 
-# Содержание
+1. The project contains a variety of working articles and notes.
+2. Texts may contain errors.
 
-1. [Pusa - WEB без JS на клиенте](ru/pusa.md)
-0. [Цикл разработки](ru/development_cycle.md)
-0. [Точка конверсии момента времени в клиент-серверном приложении](ru/timezones.md)
-0. [Компоненты микросервисно архитектуры](ru/msa_components.md)
-0. [Проблема гарантии консистентности двух и более состояний](ru/state_consistency_problem.md)
-    1. [Общее решение гарантии консистентности состояний](ru/general_solution_to_the_state_preservation_problem.md)
-    0. [Решение проблемы консистентности при работе с очередями](ru/queue_issue_and_resolve.md)
-0. [Блокировка потока при интерактивной отладке](ru/process_locking_for_debug.md)
+# Contents  
+
+1. [Pusa - WEB without JS on the client side](ru/pusa.md)
+0. [Development Cycle](en/development_cycle.md)
+0. [The Point of Time Conversion in Client-Server Applications](ru/timezones.md)
+0. [Microservices Architecture Components](ru/msa_components.md)
+0. [The Problem of Ensuring Consistency Between Two or More States](ru/state_consistency_problem.md)
+    1. [General Solution for Ensuring State Consistency](ru/general_solution_to_the_state_preservation_problem.md)
+    0. [Resolving Consistency Issues When Working with Queues](ru/queue_issue_and_resolve.md)
+0. [Thread Locking During Interactive Debugging](ru/process_locking_for_debug.md)
