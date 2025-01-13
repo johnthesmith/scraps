@@ -1,5 +1,7 @@
 # Цикл разработки
 
+[en](../en/development_cycle.md)
+
 ![Development Cycle](https://github.com/johnthesmith/scraps/blob/main/images/development_cycle.png)
 
 ## Последовательность
