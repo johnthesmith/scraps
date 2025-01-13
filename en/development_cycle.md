@@ -1,6 +1,6 @@
 # Development Cycle
 
-[ru](../ru/README.md)
+[ru](../ru/development_cycle.md)
 
 ![Development Cycle](https://github.com/johnthesmith/scraps/blob/main/images/development_cycle.png)
 
