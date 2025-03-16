@@ -80,7 +80,7 @@ flowchart LR
 ```mermaid
 flowchart LR
 
-    balancer_inner([ Балансирвщик ])
+    balancer_inner[ Балансирвщик ]
     inceptor([Множество<br>Инцепторов])
     state([Множество<br>Состояний])   
     provider([Множество<br>провайдеров]) 
@@ -106,8 +106,8 @@ flowchart LR
 flowchart LR
 
 subgraph Приложение
-    balancer_inner([ Балансирвщик <br> внутренний ])
-    balancer_outer([ Балансирвщик  <br> внешний ])
+    balancer_inner[ Балансирвщик <br> внутренний ]
+    balancer_outer[ Балансирвщик  <br> внешний ]
     preceptor([Множество<br>Прецепторов])
     inceptor([Множество<br>Инцепторов])
     state([Множество<br>Состояний])   
