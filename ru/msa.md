@@ -14,11 +14,9 @@
 graph LR;
     inceptor[Инцептор]
     preceptor[Прецептор]
-    rig((Логика))
 
     inceptor --> |Синхронный запрос| preceptor;
     preceptor -.-> |Результат| inceptor;
-    preceptor --> rig
 ```
 
 3. Взаимодействие между Инцептором и Прецептором представляется как функция 
