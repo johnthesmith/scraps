@@ -18,7 +18,7 @@ graph LR;
 
     inceptor --> |Синхронный запрос| preceptor;
     preceptor -.-> |Результат| inceptor;
-    preceptor --- rig
+    preceptor --> rig
 ```
 
 3. Взаимодействие между Инцептором и Прецептором представляется как функция 
@@ -58,10 +58,10 @@ flowchart LR
 balancer_inner([ Балансировщик ])
 preceptor([Множество<br>Прецепторов])
 inceptor([Множество<br>Инцепторов])
-state([Множество<br>Состояний])
+rig((Логика))
 
 inceptor --> balancer_inner
 balancer_inner --> preceptor
 preceptor --> balancer_inner
-preceptor --> state
+preceptor --> rig
 ```
