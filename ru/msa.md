@@ -8,7 +8,7 @@
 1. [Инцептор](./glossary/Инцептор.md) – запуск
 0. [Прецептор](./glossary/Прецептор.md) – исполнение
 
-```
+```mermaid
 graph LR;
     inceptor[Инцептор]
     preceptor[Прецептор]
