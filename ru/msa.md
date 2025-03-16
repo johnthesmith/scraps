@@ -16,7 +16,7 @@ graph LR;
     preceptor[Прецептор]
     rig((Логика))
 
-    inceptor --> |Запрос| preceptor;
+    inceptor --> |Синхнонный запрос| preceptor;
     preceptor -.-> |Результат| inceptor;
     preceptor --- rig
 ```
