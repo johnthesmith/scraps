@@ -55,12 +55,37 @@ L4, L7) статья не рассматрвиает.
 ```mermaid
 flowchart LR
 
-balancer_inner([ Балансировщик ])
-preceptor([Множество<br>Прецепторов])
-inceptor([Множество<br>Инцепторов])
-rig((Логика))
+    balancer_inner([ Балансировщик ])
+    preceptor([Множество<br>Прецепторов])
+    inceptor([Множество<br>Инцепторов])
+    rig((Логика))
 
-inceptor --> balancer_inner
-balancer_inner --> preceptor
-preceptor --> rig
+    inceptor --> balancer_inner
+    balancer_inner --> preceptor
+    preceptor --> rig
 ```
+
+# Работа прецептора
+
+1. Для исполнения бизнес функций Прцепторам необходимо:
+    1. выполнять взаимодействие с хранилищами состояний;
+    0. выполнять взаимодейсвие с иными сервисами (Провайдерами);
+    0. выполнять взаимодействие с иными Прецепторами для передачи вызова.
+2. С учетом изложенного следует расширить схему следующим образом:
+
+```
+flowchart LR
+
+    balancer_inner([ Балансирвщик ])
+    preceptor([Множество<br>Прецепторов])
+    inceptor([Множество<br>Инцепторов])
+    state([Множество<br>Состояний])   
+    provider([Множество<br>провайдеров])   
+
+    inceptor --> |Вызов <br> прецептора| balancer_inner
+    balancer_inner --> |Вызов <br> прецептора| preceptor
+    preceptor --> |Передача вызова <br> прецептору| balancer_inner
+    preceptor --> |Обмен c<br>провайдерами| provider
+    preceptor --> |Обмен<br>состояниями| state
+```
+
