@@ -12,11 +12,11 @@
 graph LR;
     inceptor[Инцептор]
     preceptor[Прецептор]
-    rig((Лгика))
+    rig((Логика))
 
     inceptor --> |Запрос| preceptor;
     preceptor -.-> |Результат| inceptor;
-    prectpor --- rig
+    precptor --- rig
 ```
 
 
