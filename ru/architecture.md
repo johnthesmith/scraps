@@ -1,7 +1,7 @@
 # Архитектура сервиса
 
 1. Раздел описывает принципы и правила сервисов в рамках МСА в общем и 
-[MSASIE](./msamsie.md) в частности.
+[MSASIE](./msasie.md) в частности.
 
 
 
@@ -74,4 +74,4 @@ vendor --> vendor_lib --> rig
 
 # Ссылки
 
-1. [MSASIE](./msamsie.md) 
+1. [MSASIE](./msasie.md) 
