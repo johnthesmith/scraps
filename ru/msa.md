@@ -16,7 +16,7 @@ graph LR;
 
     inceptor --> |Запрос| preceptor;
     preceptor -.-> |Результат| inceptor;
-    precptor --- rig
+    preceptor --- rig
 ```
 
 
