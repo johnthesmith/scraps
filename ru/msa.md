@@ -67,7 +67,7 @@ flowchart LR
 
 # Работа c прецептором
 
-1. Для исполнения бизнес функций Прцепторам необходимо:
+1. Для исполнения бизнесполцессов Прцепторам необходимо:
     1. выполнять взаимодействие с хранилищами состояний;
     0. выполнять взаимодейсвие с иными сервисами (Провайдерами);
     0. выполнять взаимодействие с иными Прецепторами для передачи вызова.
@@ -89,3 +89,30 @@ flowchart LR
     preceptor --> |Обмен<br>состояниями| state
 ```
 
+
+# Резюме
+
+flowchart LR
+
+subgraph Приложение
+    balancer_inner([ Балансирвщик <br> внутренний ])
+    balancer_outer([ Балансирвщик  <br> внешний ])
+    preceptor([Множество<br>Прецепторов])
+    inceptor([Множество<br>Инцепторов])
+    state([Множество<br>Состояний])   
+    rig((Логика))
+end
+
+subgraph Мир
+    client([Множество<br>клиентов])   
+    provider([Множество<br>провайдеров])   
+end
+
+client --> balancer_outer
+inceptor --> balancer_inner
+balancer_outer --> preceptor
+balancer_inner --> preceptor
+preceptor --> balancer_inner
+preceptor --> rig
+rig --> state
+rig --> provider
