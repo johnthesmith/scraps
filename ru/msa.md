@@ -98,7 +98,6 @@ subgraph Приложение
     preceptor([Множество<br>Прецепторов])
     inceptor([Множество<br>Инцепторов])
     state([Множество<br>Состояний])   
-    rig((Логика))
 end
 
 subgraph Мир
@@ -111,7 +110,6 @@ inceptor --> balancer_inner
 balancer_outer --> preceptor
 balancer_inner --> preceptor
 preceptor --> balancer_inner
-preceptor --> rig
-rig --> state
-rig --> provider
+preceptor --> state
+preceptor --> provider
 ```
