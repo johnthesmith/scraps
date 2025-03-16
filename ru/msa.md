@@ -92,6 +92,8 @@ flowchart LR
 
 # Резюме
 
+
+```mermaid
 flowchart LR
 
 subgraph Приложение
@@ -116,3 +118,4 @@ preceptor --> balancer_inner
 preceptor --> rig
 rig --> state
 rig --> provider
+```
