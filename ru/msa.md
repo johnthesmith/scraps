@@ -62,7 +62,5 @@ rig((Логика))
 
 inceptor --> balancer_inner
 balancer_inner --> preceptor
-preceptor -.-> balancer_inner
-preceptor --> balancer_inner
 preceptor --> rig
 ```
