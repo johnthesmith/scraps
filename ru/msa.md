@@ -58,11 +58,9 @@ flowchart LR
     balancer_inner([ Балансировщик ])
     preceptor([Множество<br>Прецепторов])
     inceptor([Множество<br>Инцепторов])
-    rig((Логика))
 
     inceptor --> balancer_inner
     balancer_inner --> preceptor
-    preceptor --> rig
 ```
 
 # Работа c прецептором
