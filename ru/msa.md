@@ -77,16 +77,16 @@ flowchart LR
 flowchart LR
 
     balancer_inner([ Балансирвщик ])
-    preceptor([Множество<br>Прецепторов])
     inceptor([Множество<br>Инцепторов])
     state([Множество<br>Состояний])   
-    provider([Множество<br>провайдеров])   
+    provider([Множество<br>провайдеров]) 
+    preceptor([Множество <br> прецепторов])
 
     inceptor --> |Вызов <br> прецептора| balancer_inner
     balancer_inner --> |Вызов <br> прецептора| preceptor
     preceptor --> |Передача вызова <br> прецептору| balancer_inner
+    preceptor -->  |Обмен<br>состояниями| state
     preceptor --> |Обмен c<br>провайдерами| provider
-    preceptor --> |Обмен<br>состояниями| state
 ```
 
 
