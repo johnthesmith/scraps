@@ -119,7 +119,7 @@ flowchart LR
     provider([Провайдеры])@{ shape: processes }
 
     inceptor --> balancer
-    balancer --> |Вызов <br> прецептора| preceptor
+    balancer --> |Первичный <br> вызов| preceptor
     preceptor --> |Вторичный вызов <br> SIAMA| balancer
     preceptor --> |Вызовы вне<br> SIAMA| provider
 ```
