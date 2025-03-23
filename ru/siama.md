@@ -72,13 +72,11 @@ graph LR;
 
 ```mermaid
 flowchart LR
+    balancer([ Балансировщик ])
+    inceptor([Инцепторы])@{ shape: processes }
+    preceptor([Прецепторы])@{ shape: processes }
 
-    balancer_inner([ Балансировщик ])
-    preceptor([Множество<br>Прецепторов])
-    inceptor([Множество<br>Инцепторов])
-
-    inceptor --> balancer_inner
-    balancer_inner --> preceptor
+    inceptor --> balancer --> preceptor --> balancer
 ```
 
 
