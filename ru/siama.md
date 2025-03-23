@@ -110,10 +110,13 @@ flowchart LR
 ```mermaid
 flowchart LR
 
-    balancer_inner[ Балансирвщик ]
-    inceptor([Инцепторы])@{ shape: processes }
+    subgraph SIAMA
+        balancer_inner[ Балансирвщик ]
+        inceptor([Инцепторы])@{ shape: processes }
+        preceptor([Прецепторы])@{ shape: processes }
+    end
+
     provider([Провайдеры])@{ shape: processes }
-    preceptor([Прецепторы])@{ shape: processes }
 
     inceptor --> |Вызов <br> прецептора| balancer_inner
     balancer_inner --> |Вызов <br> прецептора| preceptor
