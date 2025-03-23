@@ -80,7 +80,7 @@ flowchart LR
 ```
 
 
-# Обратные вызовы
+# Вторичные вызовы
 
 1. В процессе исполнения действия Прецетор может осуществить повторный вызов
 иных прецепторов, что позволяет многократно выполнять различную логику на 
@@ -93,7 +93,7 @@ flowchart LR
     inceptor([Инцепторы])@{ shape: processes }
     preceptor([Прецепторы])@{ shape: processes }
 
-    inceptor --> balancer --> preceptor --> balancer
+    inceptor --> balancer --> |первичный вызов| preceptor --> |вторичные вызовы| balancer
 ```
 
 
