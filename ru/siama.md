@@ -108,7 +108,7 @@ flowchart LR
 2. С учетом изложенного следует расширить схему следующим образом:
 
 ```mermaid
-flowchart TB
+flowchart LR
 
     balancer_inner[ Балансирвщик ]
     inceptor([Множество<br>Инцепторов])@{ shape: processes }
