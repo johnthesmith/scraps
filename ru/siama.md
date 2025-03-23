@@ -76,6 +76,23 @@ flowchart LR
     inceptor([Инцепторы])@{ shape: processes }
     preceptor([Прецепторы])@{ shape: processes }
 
+    inceptor --> balancer --> preceptor
+```
+
+
+# Обратные вызовы
+
+1. В процессе исполнения действия Прецетор может осуществить повторный вызов
+иных прецепторов, что позволяет многократно выполнять различную логику на 
+единнообразных компоеннтах и разспределять нагрузку на различен Прецепторы
+в рамках одного бзнеспроцесса.
+
+```mermaid
+flowchart LR
+    balancer([ Балансировщик ])
+    inceptor([Инцепторы])@{ shape: processes }
+    preceptor([Прецепторы])@{ shape: processes }
+
     inceptor --> balancer --> preceptor --> balancer
 ```
 
