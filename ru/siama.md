@@ -111,16 +111,16 @@ flowchart LR
 flowchart LR
 
     subgraph SIAMA
-        balancer_inner[ Балансирвщик ]
+        balancer[ Балансирвщик ]
         inceptor([Инцепторы])@{ shape: processes }
         preceptor([Прецепторы])@{ shape: processes }
     end
 
     provider([Провайдеры])@{ shape: processes }
 
-    inceptor --> |Вызов <br> прецептора| balancer_inner
-    balancer_inner --> |Вызов <br> прецептора| preceptor
-    preceptor --> |Вторичный вызов <br> SIAMA| balancer_inner
+    inceptor --> balancer
+    balancer --> |Вызов <br> прецептора| preceptor
+    preceptor --> |Вторичный вызов <br> SIAMA| balancer
     preceptor --> |Вызовы вне<br> SIAMA| provider
 ```
 
