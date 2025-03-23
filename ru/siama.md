@@ -111,9 +111,9 @@ flowchart LR
 flowchart LR
 
     balancer_inner[ Балансирвщик ]
-    inceptor([Множество<br>Инцепторов])@{ shape: processes }
-    provider([Множество<br>провайдеров])@{ shape: processes }
-    preceptor([Множество <br> прецепторов])@{ shape: processes }
+    inceptor([Инцепторы])@{ shape: processes }
+    provider([Провайдеры])@{ shape: processes }
+    preceptor([Прецепторы])@{ shape: processes }
 
     inceptor --> |Вызов <br> прецептора| balancer_inner
     balancer_inner --> |Вызов <br> прецептора| preceptor
