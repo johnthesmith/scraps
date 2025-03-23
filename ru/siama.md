@@ -137,7 +137,7 @@ flowchart LR
 выглядеть следующим образом:
 
 ```mermaid
-flowchart TD  
+flowchart LR
     
     subgraph SIAMA
         inceptor([Инцепторы])@{ shape: processes }
