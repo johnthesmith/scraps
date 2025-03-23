@@ -121,7 +121,7 @@ flowchart LR
     inceptor --> |Вызов <br> прецептора| balancer_inner
     balancer_inner --> |Вызов <br> прецептора| preceptor
     preceptor --> |Вторичный вызов <br> SIAMA| balancer_inner
-    preceptor --> |Вызоы вне<br> SIAMA| provider
+    preceptor --> |Вызовы вне<br> SIAMA| provider
 ```
 
 > **Принципиальное ограничение**
