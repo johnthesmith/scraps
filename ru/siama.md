@@ -120,7 +120,7 @@ flowchart LR
 
     inceptor --> |Вызов <br> прецептора| balancer_inner
     balancer_inner --> |Вызов <br> прецептора| preceptor
-    preceptor --> |Вызов в<br> SIAMA| balancer_inner
+    preceptor --> |Вторичный вызов <br> SIAMA| balancer_inner
     preceptor --> |Вызоы вне<br> SIAMA| provider
 ```
 
