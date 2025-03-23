@@ -30,7 +30,7 @@ graph LR;
     inceptor[Инцептор]
     preceptor[Прецептор]
 
-    inceptor --> |Синхронный запрос| preceptor;
+    inceptor --> |Синхронный<br>запрос| preceptor;
     preceptor -.-> |Результат| inceptor;
 ```
 
