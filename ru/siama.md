@@ -104,7 +104,7 @@ flowchart LR
 1. Для исполнения бизнеспроцессов Прцепторам необходимо взаимодействовать с:
     1. иными Прецепторами для передачи вызова внутри siaar.
     0. сервисами Провайдерами, которые могут быть хранилищами состояний 
-    или сервисам вне SIAAR;
+    или сервисам вне SIAMA;
 2. С учетом изложенного следует расширить схему следующим образом:
 
 ```mermaid
@@ -117,8 +117,8 @@ flowchart LR
 
     inceptor --> |Вызов <br> прецептора| balancer_inner
     balancer_inner --> |Вызов <br> прецептора| preceptor
-    preceptor --> |Вызов в<br> SIAAR| balancer_inner
-    preceptor --> |Вызоы вне<br> SIAAR| provider
+    preceptor --> |Вызов в<br> SIAMA| balancer_inner
+    preceptor --> |Вызоы вне<br> SIAMA| provider
 ```
 
 > **Принципиальное ограничение**
