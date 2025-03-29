@@ -114,22 +114,23 @@
 1. Следующая диаграмма представляет выше описанные отношения.
 
 ```mermaid
-classDiagram 
-    direction RL
 
-    class rid {
-        char[32] entity_id
-        string rid
-    }
+graph BT
 
-    class entity {
-        char[32] id
-        char[32] type_id
-    }
+    subgraph entity
+        entity_id["char[32] id"]
+        entity_type_id["char[32] type_id"]
+    end
+
+    subgraph rid
+        rid_value["rid : string"]
+        rid_entity_id["char[32] entity_id"]
+    end
 
 
-    entity --> entity : entity_id → id
-    rid --> entity : entity_id → id
+entity_type_id --> entity_id
+rid_entity_id -----> entity_id 
+
 ```
 
 
