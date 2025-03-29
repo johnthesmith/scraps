@@ -137,6 +137,7 @@ classDiagram
 1. Указанную краткую диаграмму допустимо расширить дополнительными отношениями
 для описания связей между сущностями и контекстным описанием свойств сущностей.
 
+```mermaid
 classDiagram 
     direction RL
 
@@ -169,12 +170,7 @@ classDiagram
     links --> entity: from_link → id
     context --> entity: context.entity_id → entity.id
     context --> entity: context.context_id → entity.id
-
-
-
-
-
-
+```
 
 
 # Методы взаимодействия с сущностью
