@@ -165,12 +165,12 @@ end
 
 
 entity_type_id --> entity_id
+rid_entity_id ---> entity_id 
 context_type_id ---> entity_id 
-rid_entity_id -----> entity_id 
+context_id --> entity_id 
 link_from_id ---> entity_id 
 link_to_id ---> entity_id 
-link_type_id ----> entity_id 
-context_id ---> entity_id 
+link_type_id --> entity_id 
 ```
 
 # Методы взаимодействия с сущностью
