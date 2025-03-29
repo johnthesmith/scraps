@@ -69,7 +69,12 @@
 
 ### вызов define
 ```
-json define( sting id, string idType, array string dim[] )
+json define
+(
+    string rid, 
+    string ridType, 
+    array string dim[] 
+)
 ```
 
 ### aргументы define
@@ -82,6 +87,53 @@ json define( sting id, string idType, array string dim[] )
 ### результат define
 
 1. Метод define возвращает структуру состояний результата.
+
+### алгоритм
+
+json define
+(
+    /* Идентификтаор типа сущности */
+    string ridType, 
+    /* Опциональный идентификатор сущности */
+    string rid = null, 
+    /* Опциональные измерения */
+    array string dim[] 
+)
+{
+    if( autoinc ) 
+    {
+        /*
+            Механизм идентификации на основе автоинкремента 
+        */
+        /* Получаем очередной автоинкрементный индекс */
+        id = max( id ) + 1;
+        /* Получаем иднетификатор типа если он существует */
+        idType = rid 
+        -> select({ caption == ridType }) 
+        -> get( "endity_id" );
+    }
+    else
+    {
+        /*
+            Механизм идентификации на основе hash
+        */
+        /* Вычисляем hash для идентификатора сущности */
+        id = hash( rid == null ? getId() : rid );
+        /* Вычисляем hash для типа сущности */
+        idType = hash( ridType );
+        if( !entity -> exists( idType ))
+        {
+            idType = null;
+        }
+    }
+
+    if( rid != null )
+    {
+        rid -> insert({ "id":id, "rid",rid });
+    }
+
+   entity -> insert( "id":id, );
+}
 
 
 
@@ -140,3 +192,6 @@ bool del( string id, array string dum[] )
 
   
 ...
+
+
+
