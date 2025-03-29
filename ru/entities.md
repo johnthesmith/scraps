@@ -60,7 +60,44 @@
 
 # Организация хранения сущностей
 
-...
+```mermaid
+erDiagram
+    ENTITY {
+        BIGINT id
+        BIGINT type_id
+    }
+
+    RID_TABLE {
+        BIGINT entity_id
+        TEXT rid
+    }
+
+    TABLE_A {
+        BIGINT entity_id
+        TEXT data_a
+    }
+
+    TABLE_B {
+        BIGINT entity_id
+        TEXT data_b
+    }
+
+    TABLE_C {
+        BIGINT entity_id
+        TEXT data_c
+    }
+
+    TABLE_D {
+        BIGINT entity_id
+        TEXT data_d
+    }
+
+    RID_TABLE }o--|| ENTITY : "entity_id references id"
+    TABLE_A }o--|| ENTITY : "entity_id references id"
+    TABLE_B }o--|| ENTITY : "entity_id references id"
+    TABLE_C }o--|| ENTITY : "entity_id references id"
+    TABLE_D }o--|| ENTITY : "entity_id references id"
+```
 
 
 
