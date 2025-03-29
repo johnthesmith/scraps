@@ -169,9 +169,7 @@ json define
 ### aргументы check
 
 1. Метод check принимает следующие аргументы:
-    1. ```string id``` - Идентификатор сущности;
-    2. ```string itType``` - идентификатор типа сущности;
-    3. ```array string dim[]``` - массив измерений.
+    1. ```char32 id``` - Идентификатор сущности;
 
 ### результат check
 
@@ -183,18 +181,24 @@ json define
 ```
 json check
 (
-    string id, 
-    array string dim[] ) = null
+    /* Идентификатор сущности */
+    char32 id
 )
 {
-    /**/
+    /* Выполняем поиск сущности по идентификатору */
     dataset = entity -> select({ "id":"id" });
+
+    /* Проверка результата поиска ... */
     if( dataset != null )
     {
+        /*
+            Запись найдена, выполняем определение типа из кортежа
+        */
         idType = dataset -> get( "type_id ");
+        /* Проверка наличия типа */
         if idType == null )
         {
-            /* Сущность была удалена */
+            /* Тип не указан, cущность была удалена */
             result = { "code":"entity_not_found" }
         }
         else
@@ -206,10 +210,12 @@ json check
             datasetRid = rid -> select({ "entity_id": idType });
             if( datastRid != null )
             {
+                /* Возвращаем тип результата */
                 result = 
                 {
                     "code":"ok", 
-                    "ridType":datasetRid -> get( "rid" )
+                    "ridType":datasetRid -> get( "rid" ),
+                    "idType":idType
                 };
             }
             else
@@ -231,10 +237,13 @@ json check
 ```
 
 
+## rid2id
+
+## id2rid
 
 
 
-## del
+## delete
 
 1. Метод del пытается удалить сущность по идетификатору.
 2. При наличии сущности она будет удалена с подтверждением результата удаления.
@@ -242,7 +251,7 @@ json check
 4. Метод не пытается проверить целостность ссылок на сущности, а потому может 
 быть удалена любая из сущностей.
 
-### вызов del
+### вызов delete
 
 ``` 
 bool del( string id, array string dum[] )
