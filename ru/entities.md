@@ -139,19 +139,39 @@ classDiagram
 для описания связей между сущностями и контекстным описанием свойств сущностей.
 
 ```mermaid
-graph RL
-  subgraph entity ["entity"]
-    entity_id["id : char[32]"]
-    entity_type_id["type_id : char[32]"]
+graph BT
+  subgraph entity
+    entity_id["char[32] id"]
+    entity_type_id["char[32] type_id"]
   end
 
-  subgraph rid ["rid"]
-    rid_entity_id["entity_id : char[32]"]
+  subgraph rid
     rid_value["rid : string"]
+    rid_entity_id["char[32] entity_id"]
   end
 
-  rid_entity_id --> entity_id : "entity_id → id"```
+subgraph context
+    context_id["char[32] entity_id"]
+    context_type_id["char[32] type_id"]
+    context_data["json data"]
+end
 
+ subgraph links
+    link_from_id["char[32] entity_id"]
+    link_type_id["char[32] type_id"]
+    link_to_id["string rid"]
+  end
+
+
+entity_type_id --> entity_id
+context_type_id ---> entity_id 
+rid_entity_id -----> entity_id 
+link_from_id ---> entity_id 
+link_to_id ---> entity_id 
+link_type_id ----> entity_id 
+context_id ---> entity_id 
+
+```
 
 # Методы взаимодействия с сущностью
 
