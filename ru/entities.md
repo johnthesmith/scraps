@@ -142,25 +142,25 @@ rid_entity_id -----> entity_id
 ```mermaid
 graph BT
   subgraph entity
-    entity_id["char[32] id"]
-    entity_type_id["char[32] type_id"]
+    entity_id["char[32] <br> id"]
+    entity_type_id["char[32] <br> type_id"]
   end
 
   subgraph rid
-    rid_value["rid : string"]
-    rid_entity_id["char[32] entity_id"]
+    rid_value["rid <br> string"]
+    rid_entity_id["char[32] <br> entity_id"]
   end
 
 subgraph context
-    context_id["char[32] entity_id"]
-    context_type_id["char[32] type_id"]
+    context_id["char[32]<br>entity_id"]
+    context_type_id["char[32] <br> type_id"]
     context_data["json data"]
 end
 
  subgraph links
-    link_from_id["char[32] entity_id"]
-    link_type_id["char[32] type_id"]
-    link_to_id["string rid"]
+    link_from_id["char[32] <br> entity_id"]
+    link_type_id["char[32] <br> type_id"]
+    link_to_id["string <br> rid"]
   end
 
 
@@ -171,7 +171,6 @@ link_from_id ---> entity_id
 link_to_id ---> entity_id 
 link_type_id ----> entity_id 
 context_id ---> entity_id 
-
 ```
 
 # Методы взаимодействия с сущностью
