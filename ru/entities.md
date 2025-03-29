@@ -115,7 +115,7 @@
 
 ```mermaid
 classDiagram 
-    direction LR
+    direction RL
 
     class rid {
         char[32] entity_id
