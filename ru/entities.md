@@ -118,13 +118,13 @@
 graph BT
 
     subgraph entity
-        entity_id["char[32] id"]
-        entity_type_id["char[32] type_id"]
+        entity_id["char[32] <br> id"]
+        entity_type_id["char[32] <br> type_id"]
     end
 
     subgraph rid
-        rid_value["rid : string"]
-        rid_entity_id["char[32] entity_id"]
+        rid_value["string <br> rid"]
+        rid_entity_id["char[32] <br> entity_id"]
     end
 
 
