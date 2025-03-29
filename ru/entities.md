@@ -6,6 +6,13 @@
 
 
 
+# Авторы
+
+1. https://github.com/johnthesmith/
+2. https://github.com/igptx
+
+
+
 # Теория
 
 1. Для сущности неоходимо минимально определить:
@@ -88,7 +95,7 @@ json define
 
 1. Метод define возвращает структуру состояний результата.
 
-### алгоритм
+### алгоритм define
 
 json define
 (
@@ -127,12 +134,35 @@ json define
         }
     }
 
-    if( rid != null )
+    if( idType != null )
     {
-        rid -> insert({ "id":id, "rid",rid });
-    }
+        /* Проверяем наличие rid для его опциональной регистрации ... */
+        if( rid != null && rid -> exists( rid ))
+        {
+            /* ... и если rid не обнаружен регистрируем его  */
+            rid -> insert( "entity_id":id, "rid":rid );
+        }
 
-   entity -> insert( "id":id, );
+        /* Создаем сущность с идентфикатором id */
+        entity -> insert( "id":id, "type_id":idType );
+
+        /* Возвращаем положительный результат с новым идентификатором сущности */
+        result = { "code":"ok", "id":id };
+    }
+    else
+    {
+        if( rid == ridType )
+        {
+            /* Регистрируем новый домен */
+            rid -> insert( "entity_id":id, "rid":rid );
+            entity -> insert( "id":id, "type_id":id );            
+        }
+        else
+        {
+            /* Информируем пользователя об отсутсвии сущности */
+            result = { "code":"unknown_type" );
+        }
+    }
 }
 
 
