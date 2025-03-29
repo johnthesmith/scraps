@@ -132,45 +132,25 @@ classDiagram
     rid --> entity : entity_id → id
 ```
 
+
 ### Расширенная диаграмма отношений
 
 1. Указанную краткую диаграмму допустимо расширить дополнительными отношениями
 для описания связей между сущностями и контекстным описанием свойств сущностей.
 
 ```mermaid
-classDiagram 
-    direction RL
+graph RL
+  subgraph entity ["entity"]
+    entity_id["id : char[32]"]
+    entity_type_id["type_id : char[32]"]
+  end
 
-    class rid {
-        char[32] entity_id
-        TEXT rid
-    }
+  subgraph rid ["rid"]
+    rid_entity_id["entity_id : char[32]"]
+    rid_value["rid : string"]
+  end
 
-    class entity {
-        char[32] id
-        char[32] type_id
-    }
-
-    class links {
-        char[32] from_id
-        char[32] link_id
-        char[32] to_id
-    }
-
-    class context {
-        char[32] entity_id
-        char[32] context_id
-        json data
-    }
-
-    entity --> entity : entity_id → id
-    rid --> entity : entity_id → id
-    links --> entity: from_id → id
-    links --> entity: from_to → id
-    links --> entity: from_link → id
-    context --> entity: context.entity_id → entity.id
-    context --> entity: context.context_id → entity.id
-```
+  rid_entity_id --> entity_id : "entity_id → id"```
 
 
 # Методы взаимодействия с сущностью
