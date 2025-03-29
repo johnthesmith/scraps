@@ -74,16 +74,6 @@
         1. и при этом обладала тем же типом, возвращается положительный результат.
         2. и при этом с иным типом, возвращается сообщение об ошибке.
 
-### вызов define
-```
-json define
-(
-    string rid, 
-    string ridType, 
-    array string dim[] 
-)
-```
-
 ### aргументы define
 
 1. Метод define принимает следующие аргументы:
@@ -107,30 +97,33 @@ json define
     array string dim[] 
 )
 {
-    if( autoinc ) 
+    switch( algorithm )
     {
-        /*
-            Механизм идентификации на основе автоинкремента 
-        */
-        /* Получаем очередной автоинкрементный индекс */
-        id = max( id ) + 1;
-        /* Получаем иднетификатор типа если он существует */
-        idType = rid 
-        -> select({ caption == ridType }) 
-        -> get( "endity_id" );
-    }
-    else
-    {
-        /*
-            Механизм идентификации на основе hash
-        */
-        /* Вычисляем hash для идентификатора сущности */
-        id = hash( rid == null ? getId() : rid );
-        /* Вычисляем hash для типа сущности */
-        idType = hash( ridType );
-        if( !entity -> exists( idType ))
+        AUTOINCREMENT:
         {
-            idType = null;
+            /*
+                Механизм идентификации на основе автоинкремента 
+            */
+            /* Получаем очередной автоинкрементный индекс */
+            id = max( id ) + 1;
+            /* Получаем иднетификатор типа если он существует */
+            idType = rid 
+            -> select({ caption == ridType }) 
+            -> get( "endity_id" );
+        }
+        HASH:
+        {
+            /*
+                Механизм идентификации на основе hash
+            */
+            /* Вычисляем hash для идентификатора сущности */
+            id = hash( rid == null ? getId() : rid );
+            /* Вычисляем hash для типа сущности */
+            idType = hash( ridType );
+            if( !entity -> exists( idType ))
+            {
+                idType = null;
+            }
         }
     }
 
@@ -156,6 +149,7 @@ json define
             /* Регистрируем новый домен */
             rid -> insert( "entity_id":id, "rid":rid );
             entity -> insert( "id":id, "type_id":id );            
+            result = { "code":"ok", "id":id };
         }
         else
         {
@@ -172,12 +166,6 @@ json define
 1. Метод check возвращает возвращает тип сущности в случае, если она была 
 определена или пустой результат в противном случае.
 
-### вызов check
-
-```
-string check( string id, array string dim[] ) = null
-```
-
 ### aргументы check
 
 1. Метод check принимает следующие аргументы:
@@ -187,7 +175,62 @@ string check( string id, array string dim[] ) = null
 
 ### результат check
 
-1. Метод define возвращает идентификатор типа.
+1. Метод define возвращает структуру состояний результата c указанием типа 
+сущности.
+
+### алгорим check
+
+```
+json check
+(
+    string id, 
+    array string dim[] ) = null
+)
+{
+    /**/
+    dataset = entity -> select({ "id":"id" });
+    if( dataset != null )
+    {
+        idType = dataset -> get( "type_id ");
+        if idType == null )
+        {
+            /* Сущность была удалена */
+            result = { "code":"entity_not_found" }
+        }
+        else
+        {
+            /* 
+                Удалось определить идентификатор тип и необходимо
+                получить его название
+            */
+            datasetRid = rid -> select({ "entity_id": idType });
+            if( datastRid != null )
+            {
+                result = 
+                {
+                    "code":"ok", 
+                    "ridType":datasetRid -> get( "rid" )
+                };
+            }
+            else
+            {
+                /* 
+                    Имя типа сущности не найдено что является 
+                    исключительной ситуацией 
+                */
+                result = { "code":"type_name_not_found" }
+            }
+        }
+    }
+    else
+    {
+        /* Сущность не найдена */
+        result = { "code":"entity_not_found" }
+    }
+}
+```
+
+
 
 
 
