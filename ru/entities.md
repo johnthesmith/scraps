@@ -329,7 +329,7 @@ graph BT
 
 1. Отношение хранит читаемый идентификатор сущностей.
 0. Содержит следующие атрибуты:
-    1. char[32] entities_id - идентициатор сущности из отношения entities.
+    1. char[32] entity_id - идентициатор сущности из отношения entities.
     0. string rid - текстовое представление читаемого идентификатора сущности.
 0. Предпочтение отдается операциям insert, отношение не предполагает update и delete.
 0. Отношение предполагает сравнительно не большую мощность по сравнению с entities, так как 
@@ -344,18 +344,18 @@ graph BT
 graph BT
 
     subgraph entities
-        entities_id["char[32] <br> id"]
+        entity_id["char[32] <br> id"]
         entities_type_id["char[32] <br> type_id"]
     end
 
     subgraph rid
         rid_value["string <br> rid"]
-        rid_entities_id["char[32] <br> entities_id"]
+        rid_entity_id["char[32] <br> entity_id"]
     end
 
 
-entities_type_id --> entities_id
-rid_entities_id -----> entities_id 
+entities_type_id --> entity_id
+rid_entity_id -----> entity_id 
 
 ```
 
@@ -368,35 +368,35 @@ rid_entities_id -----> entities_id
 ```mermaid
 graph BT
   subgraph entities
-    entities_id["char[32] <br> id"]
+    entity_id["char[32] <br> id"]
     entities_type_id["char[32] <br> type_id"]
   end
 
   subgraph rid
     rid_value["rid <br> string"]
-    rid_entities_id["char[32] <br> entities_id"]
+    rid_entity_id["char[32] <br> entity_id"]
   end
 
 subgraph properties
-    properties_id["char[32]<br>entities_id"]
+    properties_id["char[32]<br>entity_id"]
     properties_type_id["char[32] <br> type_id"]
     properties_data["json data"]
 end
 
  subgraph links
-    link_from_id["char[32] <br> entities_id"]
+    link_from_id["char[32] <br> entity_id"]
     link_type_id["char[32] <br> type_id"]
     link_to_id["string <br> rid"]
   end
 
 
-entities_type_id --> entities_id
-rid_entities_id ---> entities_id 
-properties_type_id ---> entities_id 
-properties_id --> entities_id 
-link_from_id ---> entities_id 
-link_to_id ---> entities_id 
-link_type_id --> entities_id 
+entities_type_id --> entity_id
+rid_entity_id ---> entity_id 
+properties_type_id ---> entity_id 
+properties_id --> entity_id 
+link_from_id ---> entity_id 
+link_to_id ---> entity_id 
+link_type_id --> entity_id 
 ```
 
 # Методы взаимодействия с сущностью
@@ -480,7 +480,7 @@ json define
         if( rid != null && rid -> exists( rid ))
         {
             /* ... и если rid не обнаружен регистрируем его  */
-            rid -> insert( "entities_id":id, "rid":rid );
+            rid -> insert( "entity_id":id, "rid":rid );
         }
 
         /* Создаем сущность с идентфикатором id */
@@ -494,7 +494,7 @@ json define
         if( rid == ridType )
         {
             /* Регистрируем новый домен */
-            rid -> insert( "entities_id":id, "rid":rid );
+            rid -> insert( "entity_id":id, "rid":rid );
             entities -> insert( "id":id, "type_id":id );            
             result = { "code":"ok", "id":id };
         }
@@ -554,7 +554,7 @@ json check
                 Удалось определить идентификатор тип и необходимо
                 получить его название
             */
-            datasetRid = rid -> select({ "entities_id": idType });
+            datasetRid = rid -> select({ "entity_id": idType });
             if( datastRid != null )
             {
                 /* Возвращаем тип результата */
