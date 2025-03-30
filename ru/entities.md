@@ -393,6 +393,40 @@ link_to_id ---> entity_id
 link_type_id --> entity_id 
 ```
 
+# Сервсы
+
+1. Общий объем информации по сущностям следует разделить на следующие микросервисы:
+    1. сервис entity - обслуживает отношения entity и id;
+    0. сервис propery - обслуживает вторичны отношения link и property;
+    0. множество сервисов conumer - реализуют бизнес функционал.
+
+```mermaid
+flowchart TD
+    subgraph Сервсы потребители
+        consumer
+        consumer_db[(consumer_db)]
+    end
+
+    subgraph Сервис свойств
+        property
+        property_db[(property_db)]
+    end
+
+    subgraph "Сервис сущностей"
+        entity
+        entity_db[(entity_db)]
+    end
+    
+
+    consumer --> consumer_db
+    entity --> entity_db
+    property --> property_db
+
+    consumer -->|rest| entity
+    consumer -->|rest| property
+```
+
+
 # Методы взаимодействия с сущностью
 
 1. Реализцаяи предполагает следующие методы:
