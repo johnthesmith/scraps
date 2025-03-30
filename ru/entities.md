@@ -135,8 +135,8 @@
     "properties":
     [
         {
-            "entitiesId":"man",
-            "propertiesId": null,
+            "entityId":"man",
+            "propertyId": null,
             "properties":
             {
                 "weightKg":80,
@@ -144,8 +144,8 @@
             }
         },
         {
-            "entitiesId":"man",
-            "propertiesId": "ru",
+            "entityId":"man",
+            "propertyId": "ru",
             "properties":
             {
                 "firstName":"Джон",
@@ -153,8 +153,8 @@
             }
         },
         {
-            "entitiesId":"man",
-            "propertiesId": "en",
+            "entityId":"man",
+            "propertyId": "en",
             "properties":
             {
                 "firstName":"John",
@@ -162,8 +162,8 @@
             }
         },
         {
-            "entitiesId":"man",
-            "propertiesId": null,
+            "entityId":"man",
+            "propertyId": null,
             "properties":
             {
                 "weightKg":80,
@@ -171,16 +171,16 @@
             }
         },
         {
-            "entitiesId":"cat",
-            "propertiesId": "ru",
+            "entityId":"cat",
+            "propertyId": "ru",
             "properties":
             {
                 "firstName":"Пуса"
             }
         },
         {
-            "entitiesId":"cat",
-            "propertiesId": null,
+            "entityId":"cat",
+            "propertyId": null,
             "properties":
             {
                 "weightKg":4.5
@@ -222,8 +222,8 @@
     "properties":
     [
         {
-            "entitiesId":"man",
-            "propertiesId": null,
+            "entityId":"man",
+            "propertyId": null,
             "properties":
             {
                 "weightKg":80,
@@ -231,8 +231,8 @@
             }
         },
         {
-            "entitiesId":"man",
-            "propertiesId": "ru",
+            "entityId":"man",
+            "propertyId": "ru",
             "properties":
             {
                 "firstName":"Джон",
@@ -240,8 +240,8 @@
             }
         },
         {
-            "entitiesId":"man",
-            "propertiesId": "en",
+            "entityId":"man",
+            "propertyId": "en",
             "properties":
             {
                 "firstName":"John",
@@ -249,8 +249,8 @@
             }
         },
         {
-            "entitiesId":"man",
-            "propertiesId": null,
+            "entityId":"man",
+            "propertyId": null,
             "properties":
             {
                 "weightKg":80,
@@ -258,16 +258,16 @@
             }
         },
         {
-            "entitiesId":"cat",
-            "propertiesId": "ru",
+            "entityId":"cat",
+            "propertyId": "ru",
             "properties":
             {
                 "firstName":"Пуса"
             }
         },
         {
-            "entitiesId":"cat",
-            "propertiesId": null,
+            "entityId":"cat",
+            "propertyId": null,
             "properties":
             {
                 "weightKg":4.5
