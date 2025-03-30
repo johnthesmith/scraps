@@ -52,8 +52,8 @@
 {
     "entities":
     {
-        "id":"entity",
-        "type":"entity"
+        "id":"entities",
+        "type":"entities"
     }
 }
 ```
@@ -68,7 +68,7 @@
     "entities":
     [
         ...,
-        { "id":"animal",    "type":"entity" },
+        { "id":"animal",    "type":"entities" },
         { "id":"human",     "type":"animal" },
         { "id":"cat",       "type":"animal" }
     ]
@@ -82,7 +82,7 @@
     [
         ...,
         /* Добавили новую сущность - связь */
-        { "id":"link",      "type":"entity" },
+        { "id":"link",      "type":"entities" },
         /* Добавили типы связи как сущность */
         { "id":"pet",       "type":"link" },
         { "id":"host",      "type":"link" }
@@ -111,7 +111,7 @@
     [
         ...
         /* Добавили новую сущность - язык */
-        { "id":"lang", "type":"entity" },
+        { "id":"lang", "type":"entities" },
         /* Добавили два языка, соответсвенно русский и английский */
         { "id":"ru", "type":"lang" },
         { "id":"en", "type":"lang" }
@@ -125,8 +125,8 @@
     "properties":
     [
         {
-            "entityId":"man",
-            "contextId": null,
+            "entitiesId":"man",
+            "propertiesId": null,
             "properties":
             {
                 "weightKg":80,
@@ -134,8 +134,8 @@
             }
         },
         {
-            "entityId":"man",
-            "contextId": "ru",
+            "entitiesId":"man",
+            "propertiesId": "ru",
             "properties":
             {
                 "firstName":"Джон",
@@ -143,8 +143,8 @@
             }
         },
         {
-            "entityId":"man",
-            "contextId": "en",
+            "entitiesId":"man",
+            "propertiesId": "en",
             "properties":
             {
                 "firstName":"John",
@@ -152,8 +152,8 @@
             }
         },
         {
-            "entityId":"man",
-            "contextId": null,
+            "entitiesId":"man",
+            "propertiesId": null,
             "properties":
             {
                 "weightKg":80,
@@ -161,16 +161,16 @@
             }
         },
         {
-            "entityId":"cat",
-            "contextId": "ru",
+            "entitiesId":"cat",
+            "propertiesId": "ru",
             "properties":
             {
                 "firstName":"Пуса"
             }
         },
         {
-            "entityId":"cat",
-            "contextId": null,
+            "entitiesId":"cat",
+            "propertiesId": null,
             "properties":
             {
                 "weightKg":4.5
@@ -193,14 +193,14 @@
 {
     "entities":
     [
-        { "id":"entity",    "type":"entity" },
-        { "id":"animal",    "type":"entity" },
+        { "id":"entities",    "type":"entities" },
+        { "id":"animal",    "type":"entities" },
         { "id":"human",     "type":"animal" },
         { "id":"cat",       "type":"animal" }
-        { "id":"link",      "type":"entity" },
+        { "id":"link",      "type":"entities" },
         { "id":"pet",       "type":"link" },
         { "id":"host",      "type":"link" }
-        { "id":"lang",      "type":"entity" },
+        { "id":"lang",      "type":"entities" },
         { "id":"ru",        "type":"lang" },
         { "id":"en",        "type":"lang" }
     ],
@@ -212,8 +212,8 @@
     "properties":
     [
         {
-            "entityId":"man",
-            "contextId": null,
+            "entitiesId":"man",
+            "propertiesId": null,
             "properties":
             {
                 "weightKg":80,
@@ -221,8 +221,8 @@
             }
         },
         {
-            "entityId":"man",
-            "contextId": "ru",
+            "entitiesId":"man",
+            "propertiesId": "ru",
             "properties":
             {
                 "firstName":"Джон",
@@ -230,8 +230,8 @@
             }
         },
         {
-            "entityId":"man",
-            "contextId": "en",
+            "entitiesId":"man",
+            "propertiesId": "en",
             "properties":
             {
                 "firstName":"John",
@@ -239,8 +239,8 @@
             }
         },
         {
-            "entityId":"man",
-            "contextId": null,
+            "entitiesId":"man",
+            "propertiesId": null,
             "properties":
             {
                 "weightKg":80,
@@ -248,16 +248,16 @@
             }
         },
         {
-            "entityId":"cat",
-            "contextId": "ru",
+            "entitiesId":"cat",
+            "propertiesId": "ru",
             "properties":
             {
                 "firstName":"Пуса"
             }
         },
         {
-            "entityId":"cat",
-            "contextId": null,
+            "entitiesId":"cat",
+            "propertiesId": null,
             "properties":
             {
                 "weightKg":4.5
@@ -268,34 +268,37 @@
 ```
 </details>
 
-
 > ℹ️ **Информация** Дальнейшие разделы являются исключительно одной из возможных 
 > реализаций.
 
 
 
-
-
-
 # Организация хранения сущностей
 
-1. Хранение и обработу сущностей можно осуществлять различными методами:
-    1. Хранилище ключ:значение - для простых реализаций с незначительным 
-    количеством сущностей;
-    0. [Реляционные БД](#Хранилище-сущностей-на-реляционнй-БД) - предпочтительно 
-    для существенных объемов сущностей.
+1. Хранение и обработку сущностей можно осуществлять различными средствами:
+    1. Хранилище ключ:значение;
+    0. [Реляционные БД](#Хранилище-сущностей-на-реляционнй-БД).
 
 
 
 ## Хранилище сущностей на реляционнй БД
 
 1. В базовом варианте для хранения сущностей следует определить два [отношения](https://ru.wikipedia.org/wiki/%D0%9E%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D0%B5_(%D1%80%D0%B5%D0%BB%D1%8F%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C)):
-    1. [entity](#отношение-entity) - сущности;
+    1. [entities](#отношение-entities) - сущности;
     0. [rid](#отношение-rid) - читаемые идентификаторы.
+2. Дополнительно необходимы отношения:
+    1. [properties](#) - контекстозависимые свойства сущностей;
+    0. [links](#) - связи сущностей;
+
+```
+graph BT
+    rid --> entities
+    properties --> entities
+    links --> entities
+```
 
 
-
-### Отношение entity
+### Отношение entities
 
 1. Отношение хранит перечень всех сущностей и типизирует их.
 0. Содержит следующие атрибуты:
@@ -311,10 +314,10 @@
 
 1. Отношение хранит читаемый идентификатор сущностей.
 0. Содержит следующие атрибуты:
-    1. char[32] entity_id - идентициатор сущности из отношения entity.
+    1. char[32] entities_id - идентициатор сущности из отношения entities.
     0. string rid - текстовое представление читаемого идентификатора сущности.
 0. Предпочтение отдается операциям insert, отношение не предполагает update и delete.
-0. Отношение предполагает сравнительно не большую мощность по сравнению с entity, так как 
+0. Отношение предполагает сравнительно не большую мощность по сравнению с entities, так как 
 количество читаемых идентификаторов обычно ограничинно. 
 
 ### Краткая диаграмма отношений
@@ -325,19 +328,19 @@
 
 graph BT
 
-    subgraph entity
-        entity_id["char[32] <br> id"]
-        entity_type_id["char[32] <br> type_id"]
+    subgraph entities
+        entities_id["char[32] <br> id"]
+        entities_type_id["char[32] <br> type_id"]
     end
 
     subgraph rid
         rid_value["string <br> rid"]
-        rid_entity_id["char[32] <br> entity_id"]
+        rid_entities_id["char[32] <br> entities_id"]
     end
 
 
-entity_type_id --> entity_id
-rid_entity_id -----> entity_id 
+entities_type_id --> entities_id
+rid_entities_id -----> entities_id 
 
 ```
 
@@ -349,36 +352,36 @@ rid_entity_id -----> entity_id
 
 ```mermaid
 graph BT
-  subgraph entity
-    entity_id["char[32] <br> id"]
-    entity_type_id["char[32] <br> type_id"]
+  subgraph entities
+    entities_id["char[32] <br> id"]
+    entities_type_id["char[32] <br> type_id"]
   end
 
   subgraph rid
     rid_value["rid <br> string"]
-    rid_entity_id["char[32] <br> entity_id"]
+    rid_entities_id["char[32] <br> entities_id"]
   end
 
-subgraph context
-    context_id["char[32]<br>entity_id"]
-    context_type_id["char[32] <br> type_id"]
-    context_data["json data"]
+subgraph properties
+    properties_id["char[32]<br>entities_id"]
+    properties_type_id["char[32] <br> type_id"]
+    properties_data["json data"]
 end
 
  subgraph links
-    link_from_id["char[32] <br> entity_id"]
+    link_from_id["char[32] <br> entities_id"]
     link_type_id["char[32] <br> type_id"]
     link_to_id["string <br> rid"]
   end
 
 
-entity_type_id --> entity_id
-rid_entity_id ---> entity_id 
-context_type_id ---> entity_id 
-context_id --> entity_id 
-link_from_id ---> entity_id 
-link_to_id ---> entity_id 
-link_type_id --> entity_id 
+entities_type_id --> entities_id
+rid_entities_id ---> entities_id 
+properties_type_id ---> entities_id 
+properties_id --> entities_id 
+link_from_id ---> entities_id 
+link_to_id ---> entities_id 
+link_type_id --> entities_id 
 ```
 
 # Методы взаимодействия с сущностью
@@ -449,7 +452,7 @@ json define
             id = hash( rid == null ? getId() : rid );
             /* Вычисляем hash для типа сущности */
             idType = hash( ridType );
-            if( !entity -> exists( idType ))
+            if( !entities -> exists( idType ))
             {
                 idType = null;
             }
@@ -462,11 +465,11 @@ json define
         if( rid != null && rid -> exists( rid ))
         {
             /* ... и если rid не обнаружен регистрируем его  */
-            rid -> insert( "entity_id":id, "rid":rid );
+            rid -> insert( "entities_id":id, "rid":rid );
         }
 
         /* Создаем сущность с идентфикатором id */
-        entity -> insert( "id":id, "type_id":idType );
+        entities -> insert( "id":id, "type_id":idType );
 
         /* Возвращаем положительный результат с новым идентификатором сущности */
         result = { "code":"ok", "id":id };
@@ -476,8 +479,8 @@ json define
         if( rid == ridType )
         {
             /* Регистрируем новый домен */
-            rid -> insert( "entity_id":id, "rid":rid );
-            entity -> insert( "id":id, "type_id":id );            
+            rid -> insert( "entities_id":id, "rid":rid );
+            entities -> insert( "id":id, "type_id":id );            
             result = { "code":"ok", "id":id };
         }
         else
@@ -515,7 +518,7 @@ json check
 )
 {
     /* Выполняем поиск сущности по идентификатору */
-    dataset = entity -> select({ "id":"id" });
+    dataset = entities -> select({ "id":"id" });
 
     /* Проверка результата поиска ... */
     if( dataset != null )
@@ -528,7 +531,7 @@ json check
         if idType == null )
         {
             /* Тип не указан, cущность была удалена */
-            result = { "code":"entity_not_found" }
+            result = { "code":"entities_not_found" }
         }
         else
         {
@@ -536,7 +539,7 @@ json check
                 Удалось определить идентификатор тип и необходимо
                 получить его название
             */
-            datasetRid = rid -> select({ "entity_id": idType });
+            datasetRid = rid -> select({ "entities_id": idType });
             if( datastRid != null )
             {
                 /* Возвращаем тип результата */
@@ -560,7 +563,7 @@ json check
     else
     {
         /* Сущность не найдена */
-        result = { "code":"entity_not_found" }
+        result = { "code":"entities_not_found" }
     }
 }
 ```
