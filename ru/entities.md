@@ -29,8 +29,11 @@
 
 # Авторы
 
-1. https://github.com/johnthesmith/
-2. https://github.com/igptx
+1. Концепт разработан и применен в проекте [catlair](http://catlair.net/) 
+2001-2019 под лицензией [gplv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
+0. Авторы концепта 
+    1. https://github.com/johnthesmith/
+    0. https://github.com/igptx
 
 
 
