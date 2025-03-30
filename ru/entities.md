@@ -31,7 +31,7 @@
 
 1. Концепт разработан и применен в проекте [catlair](http://catlair.net/) 
 2001-2019 под лицензией [gplv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
-0. Авторы концепта 
+0. Авторы концепта:
     1. https://github.com/johnthesmith/
     0. https://github.com/igptx
 
@@ -41,7 +41,7 @@
 
 1. Для сущности неоходимо минимально определить:
     1. факт существования;
-    0. типа сущности. 
+    0. тип сущности. 
 0. Все иные описания и свойства сущности следует признать вторичными,
 а именно:
     1. связь сущностей между собой;
@@ -206,27 +206,27 @@
 {
     "entities":
     [
-        { "id":"entities",    "type":"entities" },
-        { "id":"animal",    "type":"entities" },
-        { "id":"human",     "type":"animal" },
-        { "id":"cat",       "type":"animal" }
-        { "id":"link",      "type":"entities" },
-        { "id":"pet",       "type":"link" },
-        { "id":"host",      "type":"link" }
-        { "id":"lang",      "type":"entities" },
-        { "id":"ru",        "type":"lang" },
-        { "id":"en",        "type":"lang" }
+        { "id":"entities",  "typeId":"entities" },
+        { "id":"animal",    "typeId":"entities" },
+        { "id":"human",     "typeId":"animal" },
+        { "id":"cat",       "typeId":"animal" }
+        { "id":"link",      "typeId":"entities" },
+        { "id":"pet",       "typeId":"link" },
+        { "id":"host",      "typeId":"link" }
+        { "id":"lang",      "typeId":"entities" },
+        { "id":"ru",        "typeId":"lang" },
+        { "id":"en",        "typeId":"lang" }
     ],
     "links":
     [
-        { "idFrom":"cat", "idLink":"pet", "idTo":"human" },
-        { "idFrom":"human", "idLink":"host", "idTo":"cat" }
+        { "fromId":"cat",   "linkId":"pet",     "toId":"human" },
+        { "fromId":"human", "linkId":"host",    "toId":"cat" }
     ],
     "properties":
     [
         {
-            "entityId":"man",
-            "propertyId": null,
+            "entityId"  :"human",
+            "contextId" :null,
             "properties":
             {
                 "weightKg":80,
@@ -234,8 +234,8 @@
             }
         },
         {
-            "entityId":"man",
-            "propertyId": "ru",
+            "entityId":"human",
+            "contextId": "ru",
             "properties":
             {
                 "firstName":"Джон",
@@ -243,8 +243,8 @@
             }
         },
         {
-            "entityId":"man",
-            "propertyId": "en",
+            "entityId":"human",
+            "contextId": "en",
             "properties":
             {
                 "firstName":"John",
@@ -252,17 +252,8 @@
             }
         },
         {
-            "entityId":"man",
-            "propertyId": null,
-            "properties":
-            {
-                "weightKg":80,
-                "heightSm":180
-            }
-        },
-        {
             "entityId":"cat",
-            "propertyId": "ru",
+            "contextId": "ru",
             "properties":
             {
                 "firstName":"Пуса"
@@ -270,7 +261,7 @@
         },
         {
             "entityId":"cat",
-            "propertyId": null,
+            "contextId": null,
             "properties":
             {
                 "weightKg":4.5
@@ -382,14 +373,14 @@ graph BT
 
 subgraph properties
     properties_id["char[32]<br>entity_id"]
-    properties_type_id["char[32] <br> type_id"]
-    properties_data["json data"]
+    properties_type_id["char[32] <br> context_id"]
+    properties_data["json <br> properties"]
 end
 
  subgraph links
-    link_from_id["char[32] <br> entity_id"]
-    link_type_id["char[32] <br> type_id"]
-    link_to_id["string <br> rid"]
+    link_from_id["char[32] <br> from_id"]
+    link_type_id["char[32] <br> link_id"]
+    link_to_id["char[32] <br> to_id"]
   end
 
 
