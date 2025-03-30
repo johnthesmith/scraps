@@ -50,54 +50,217 @@
 следует определить первую корневую самотипизирующуюся сущность:
 ```
 {
-    "id":"entity",
-    "type":"entity"
+    "entities":
+    {
+        "id":"entity",
+        "type":"entity"
+    }
 }
 ```
 
 > ⚠️ **Важно!** Определение кортежа фактически создает новый домен, развиваемый 
 > добавлением сущностей и описанием их свойств.
 
+Далее добавляем новые сущности:
+
 ```
-[
-    { "id":"animal",    "type":"entity" },
-    { "id":"human",     "type":"animal" },
-    { "id":"cat",       "type":"animal" }
-]
+{
+    "entities":
+    [
+        ...,
+        { "id":"animal",    "type":"entity" },
+        { "id":"human",     "type":"animal" },
+        { "id":"cat",       "type":"animal" }
+    ]
+}
 ```
 3. Для описания связей между сущностями необходим дополнить перечень сущностей
 типом связь и видом связи:
 ```
-[
-    /* Добавили новую сущность - связь */
-    { "id":"link",      "type":"entity" },
-    /* Добавили типы связи как сущность */
-    { "id":"pet",       "type":"link" },
-    { "id":"host",      "type":"link" }
-]
+{
+    "entities":
+    [
+        ...,
+        /* Добавили новую сущность - связь */
+        { "id":"link",      "type":"entity" },
+        /* Добавили типы связи как сущность */
+        { "id":"pet",       "type":"link" },
+        { "id":"host",      "type":"link" }
+    ]
+}
 ```
 Теперь возможно определять кортежи связей вида, при этом все значения
 атрибутов являются сущностями:
 ```
-[
-    /* Кот является домашним животным человека */
-    { "idFrom":"cat", "idLink":"pet", "idTo":"human" },
-    /* Челове является хозяином кота */
-    { "idFrom":"human", "idLink":"host", "idTo":"cat" },
-]
+{
+    "links":
+    [
+        /* Кот является домашним животным человека */
+        { "idFrom":"cat", "idLink":"pet", "idTo":"human" },
+        /* Челове является хозяином кота */
+        { "idFrom":"human", "idLink":"host", "idTo":"cat" }
+    ]
+}
 ```
 4. Все сущности могут обладать различными атрибутами, включая абсолютные (не 
 зависящие от контекста например вес), и контекстозависимые (например название на 
 различных языках). Для описания языков создадим новые сущности:
 ```
 [
-    /* Добавили новую сущность - язык */
-    { "id":"lang", "type":"entity" },
-    /* Добавили два языка, соответсвенно русский и английский */
-    { "id":"ru", "type":"lang" },
-    { "id":"en", "type":"lang" },
-
+    "entities":
+    [
+        ...
+        /* Добавили новую сущность - язык */
+        { "id":"lang", "type":"entity" },
+        /* Добавили два языка, соответсвенно русский и английский */
+        { "id":"ru", "type":"lang" },
+        { "id":"en", "type":"lang" }
+    ]
 ]
+```
+5. Далее возможно определить контекстозависимые и контекстонезависимые атрибуты 
+сущностей:
+```
+[
+    "properties":
+    [
+        {
+            "entityId":"man",
+            "contextId": null,
+            "properties":
+            {
+                "weightKg":80,
+                "heightSm":180
+            }
+        },
+        {
+            "entityId":"man",
+            "contextId": "ru",
+            "properties":
+            {
+                "firstName":"Джон",
+                "lastName":"Смит",
+            }
+        },
+        {
+            "entityId":"man",
+            "contextId": "en",
+            "properties":
+            {
+                "firstName":"John",
+                "lastName":"Smith",
+            }
+        },
+        {
+            "entityId":"man",
+            "contextId": null,
+            "properties":
+            {
+                "weightKg":80,
+                "heightSm":180
+            }
+        },
+        {
+            "entityId":"cat",
+            "contextId": "ru",
+            "properties":
+            {
+                "firstName":"Пуса"
+            }
+        },
+        {
+            "entityId":"cat",
+            "contextId": null,
+            "properties":
+            {
+                "weightKg":4.5
+            }
+        }
+    ]
+]
+```
+
+## Магия
+
+1. Итого не выходя за пределы тероретической модели единообразно описаны 
+разнородные сущности, связи между ними, контексты в которых эти сущности 
+описываются и их атрибуты.
+```
+{
+    "entities":
+    [
+        { "id":"entity",    "type":"entity" },
+        { "id":"animal",    "type":"entity" },
+        { "id":"human",     "type":"animal" },
+        { "id":"cat",       "type":"animal" }
+        { "id":"link",      "type":"entity" },
+        { "id":"pet",       "type":"link" },
+        { "id":"host",      "type":"link" }
+        { "id":"lang",      "type":"entity" },
+        { "id":"ru",        "type":"lang" },
+        { "id":"en",        "type":"lang" }
+    ],
+    "links":
+    [
+        { "idFrom":"cat", "idLink":"pet", "idTo":"human" },
+        { "idFrom":"human", "idLink":"host", "idTo":"cat" }
+    ],
+    "properties":
+    [
+        {
+            "entityId":"man",
+            "contextId": null,
+            "properties":
+            {
+                "weightKg":80,
+                "heightSm":180
+            }
+        },
+        {
+            "entityId":"man",
+            "contextId": "ru",
+            "properties":
+            {
+                "firstName":"Джон",
+                "lastName":"Смит",
+            }
+        },
+        {
+            "entityId":"man",
+            "contextId": "en",
+            "properties":
+            {
+                "firstName":"John",
+                "lastName":"Smith",
+            }
+        },
+        {
+            "entityId":"man",
+            "contextId": null,
+            "properties":
+            {
+                "weightKg":80,
+                "heightSm":180
+            }
+        },
+        {
+            "entityId":"cat",
+            "contextId": "ru",
+            "properties":
+            {
+                "firstName":"Пуса"
+            }
+        },
+        {
+            "entityId":"cat",
+            "contextId": null,
+            "properties":
+            {
+                "weightKg":4.5
+            }
+        }
+    ]
+}
 ```
 
 
