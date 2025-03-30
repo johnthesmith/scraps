@@ -290,7 +290,7 @@
     1. [properties](#) - контекстозависимые свойства сущностей;
     0. [links](#) - связи сущностей;
 
-```
+```mermaid
 graph BT
     rid --> entities
     properties --> entities
