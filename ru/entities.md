@@ -153,7 +153,7 @@
             "properties":
             {
                 "firstName":"Джон",
-                "lastName":"Смит",
+                "lastName":"Смит"
             }
         },
         {
@@ -162,7 +162,7 @@
             "properties":
             {
                 "firstName":"John",
-                "lastName":"Smith",
+                "lastName":"Smith"
             }
         },
         {
@@ -210,10 +210,10 @@
         { "id":"entities",  "typeId":"entities" },
         { "id":"animal",    "typeId":"entities" },
         { "id":"human",     "typeId":"animal" },
-        { "id":"cat",       "typeId":"animal" }
+        { "id":"cat",       "typeId":"animal" },
         { "id":"link",      "typeId":"entities" },
         { "id":"pet",       "typeId":"link" },
-        { "id":"host",      "typeId":"link" }
+        { "id":"host",      "typeId":"link" },
         { "id":"lang",      "typeId":"entities" },
         { "id":"ru",        "typeId":"lang" },
         { "id":"en",        "typeId":"lang" }
@@ -240,7 +240,7 @@
             "properties":
             {
                 "firstName":"Джон",
-                "lastName":"Смит",
+                "lastName":"Смит"
             }
         },
         {
@@ -249,7 +249,7 @@
             "properties":
             {
                 "firstName":"John",
-                "lastName":"Smith",
+                "lastName":"Smith"
             }
         },
         {
