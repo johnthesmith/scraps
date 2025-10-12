@@ -38,7 +38,7 @@ pull-gate -->|fail| error
 
 4. Для БД.
 
-```mermiad
+```mermaid
 flowchart LR
 
 b((begin))
