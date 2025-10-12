@@ -35,7 +35,7 @@ pull-gate --> |success| ok
 pull-gate -->|fail| error
 ```
 
-4. Для БД:
+3. Для БД:
 
 ```mermaid
 flowchart LR
@@ -52,7 +52,7 @@ state -->
 pull-gate --> |success| ok
 pull-gate -->|fail| error
 ```
-0. Иное не допускается.
+4. Иное не допускается.
 
 
 
