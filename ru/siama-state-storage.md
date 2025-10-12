@@ -27,6 +27,10 @@ pull-gate{x}
 work-gate{x}
 commit-gate{x}
 error((err))
+state[(state)]
+work[change<br>state]
+
+work -.->|idempotent <br> crud| state
 
 b --> 
 pull --> 
@@ -40,7 +44,7 @@ commit-gate -->|fail| error
 ```
 
 
-## Обработка очереди
+## Размещение событий в очереди
 
 ```mermaid
 flowchart LR
