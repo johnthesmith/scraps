@@ -116,9 +116,9 @@ a priority conscious goal.
 
 # Conclusion
 
-The safety of neural network development should not be based on ethical 
-discussions, robotics laws, or social issues, but primarily on achieving 
-guaranteed determinism and verifiable results.
+In summary: the discussion on the safety of neural network development, and AI 
+in general, must be based on achieving guaranteed repeatability and 
+verifiability of AI operation results.
 
 ---
 
