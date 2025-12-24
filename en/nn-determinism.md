@@ -25,7 +25,7 @@ data.
 Let us examine the common objections typically cited as causes of
 non-determinism.
 
----
+
 
 ## Non-determinism of Input Data
 
@@ -36,7 +36,7 @@ values during initialization.
 internal randomness without changing the arguments. Any violation of identical
 arguments for repeated computations is an implementation error.
 
----
+
 
 ## Hardware Non-determinism
 
@@ -46,7 +46,7 @@ arguments for repeated computations is an implementation error.
 is excluded. The presence of non-determinism indicates hardware faults and
 invalidates the result.
 
----
+
 
 ## Software Non-determinism
 
@@ -57,7 +57,7 @@ library versions, internal caching, or optimizations.
 result must be deterministic; otherwise, it must be classified as a software
 defect.
 
----
+
 
 ## Algorithmic Non-determinism
 
@@ -70,7 +70,7 @@ the order “floats,” producing for `x + y + z` the result
 `(x + y) + z ≠ x + (y + z)`, this must be considered an incorrect
 implementation.
 
----
+
 
 ## External Factors
 
@@ -82,21 +82,21 @@ factors, can affect the result only via explicit model arguments. If a factor
 directly influences the result without being explicitly included in the
 arguments, this is an implementation error.
 
----
+
 
 # Actions
 
 I will outline the actions that should be taken when non-determinism is detected
 in a model.
 
----
+
 
 ## Acknowledging the Problem
 
 The presence of non-determinism is an indicator of a problem. The problem must
 be acknowledged and explicitly stated.
 
----
+
 
 ## Problem Analysis
 
@@ -109,14 +109,14 @@ into one of the categories discussed above:
 4. Algorithmic non-determinism — implementation errors, parallelism, violation
    of execution order.
 
----
+
 
 ## Problem Resolution
 
 Based on the analysis, measures must be taken to eliminate the problem, with a
 demonstration of deterministic results.
 
----
+
 
 ## Intentional Introduction of Non-determinism
 
@@ -124,7 +124,6 @@ I allow cases where “randomness” is required. However, it must be explicitly
 included in the model arguments, with the ability to repeatedly test identical
 arguments. The model must still demonstrate determinism.
 
----
 
 # Conclusions
 
@@ -142,7 +141,7 @@ Based on the above, I propose the following conclusions:
 4. Implementing a deterministic execution pipeline for neural networks should
    be a conscious, high-priority goal.
 
----
+
 
 # Final Statement
 
