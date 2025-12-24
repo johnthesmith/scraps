@@ -1,7 +1,8 @@
 # Принципиальная детерминированность нейросетей и безопасность
 
-[[en](../en/nn-determinism.md)]
-[[DOI 10.5281/zenodo.18038515](https://zenodo.org/records/18038515)]
+[en](../en/nn-determinism.md) | 
+[pdf en](../tex/nn-determinism/export/index.pdf) |
+[DOI 10.5281/zenodo.18038515](https://zenodo.org/records/18038515)
 
 По роду деятельности сталкиваюсь с утверждением, о принципиальной 
 недетерминированносте нейросетей при одинаковых входных данных.

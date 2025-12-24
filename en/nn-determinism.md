@@ -1,7 +1,8 @@
 # Fundamental Determinism of Neural Networks and Security
 
-[[en](../en/nn-determinism.md)]
-[[DOI 10.5281/zenodo.18038515](https://zenodo.org/records/18038515)]
+[ru](../ru/nn-determinism.md) | 
+[pdf en](../tex/nn-determinism/export/index.pdf) |
+[DOI 10.5281/zenodo.18038515](https://zenodo.org/records/18038515)
 
 By the nature of my work, I often encounter claims about the **fundamental
 non-determinism** of neural networks given identical input data.
