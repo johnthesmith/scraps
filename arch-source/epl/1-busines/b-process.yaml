@@ -1,0 +1,21 @@
+e:
+  b-process: process
+
+p:
+  - id: b-process
+    vector:
+      lang: en
+    public:
+      name: Business Process
+      description: |
+        A defined sequence of [actions](process) to achieve a business goal.
+        Describes work flows, roles, events, and outcomes.
+
+  - id: b-process
+    vector:
+      lang: ru
+    public:
+      name: Бизнес-процесс
+      description: |
+        Установленная последовательность [действий](process) для достижения
+        бизнес-цели. Описывает потоки работ, роли, события и результаты.

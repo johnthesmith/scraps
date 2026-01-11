@@ -1,0 +1,11 @@
+e:
+  agent: entity
+
+p:
+-
+  id: agent
+  private:
+    name: Агент
+    description: |
+      [Сущность](entity) с возможностью инициативы и воздействия на
+      [объекты](object).

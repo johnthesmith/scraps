@@ -1,0 +1,9 @@
+e:
+  deity: agent
+
+p:
+  - id: deity
+    public:
+      name: Божество
+      description: |
+        Высший [агент](agent) с сверхъестественными способностями.

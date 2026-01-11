@@ -1,0 +1,9 @@
+e:
+  organization: agent
+
+p:
+  - id: organization
+    public:
+      name: Организация
+      description: |
+        [Агент](agent), состоящий из других агентов, действующих как целое.

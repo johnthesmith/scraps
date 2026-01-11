@@ -1,0 +1,55 @@
+e:
+  lang: vector-component
+  en: lang
+  ru: lang
+
+p:
+- id: lang
+  vector:
+    lang: en
+  private:
+    name: Language
+    description: |
+      [](vector-component) for linguistic localization of entity properties.
+      Defines human-readable names and descriptions.
+
+- id: lang
+  vector:
+    lang: ru
+  private:
+    name: Язык
+    description: |
+      [](vector-component) для лингвистической локализации свойств сущностей.
+      Определяет человеко-читаемые имена и описания.
+
+- id: en
+  vector:
+    lang: en
+  private:
+    name: English
+    description: |
+      [](lang) variant using Latin script.
+
+- id: en
+  vector:
+    lang: ru
+  private:
+    name: Английский
+    description: |
+      [](lang) вариант с использованием латинского алфавита.
+
+- id: ru
+  vector:
+    lang: en
+  private:
+    name: Russian
+    description: |
+      [](lang) variant using Cyrillic script.
+
+- id: ru
+  vector:
+    lang: ru
+  private:
+    name: Русский
+    description: |
+      [](lang) вариант с использованием кириллицы.

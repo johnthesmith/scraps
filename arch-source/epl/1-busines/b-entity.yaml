@@ -1,0 +1,21 @@
+e:
+  b-entity: information
+
+p:
+  - id: b-entity
+    vector:
+      lang: en
+    public:
+      name: Business Entity
+      description: |
+        A conceptual unit in business modeling representing a resource,
+        product, contract, or other element of business architecture.
+
+  - id: b-entity
+    vector:
+      lang: ru
+    public:
+      name: Бизнес сущность
+      description: |
+        Концептуальная единица в бизнес-моделировании, представляющая
+        ресурс, продукт, контракт или иной элемент бизнес-архитектуры.

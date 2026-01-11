@@ -1,0 +1,9 @@
+e:
+  operator: information
+
+p:
+  - id: operator
+    public:
+      name: Оператор
+      description: |
+        Описание преобразования аргументов в результат.

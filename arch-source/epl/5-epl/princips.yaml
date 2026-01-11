@@ -1,0 +1,50 @@
+лe:
+  archcode-rule-design-minimalism: archcode-rule-design
+  archcode-rule-design-conciseness: archcode-rule-design
+  archcode-rule-design-self-description: archcode-rule-design
+  archcode-rule-design-declarative: archcode-rule-design
+  archcode-rule-design-extensibility: archcode-rule-design
+  archcode-rule-design-distribution: archcode-rule-design
+
+p:
+# Конкретные принципы
+- id: archcode-rule-design-minimalism
+  context: [ ["lang", "ru"] ]
+  public:
+    name: "Минимализм"
+    description: "Не плоди лишних сущностей сверх необходимости (бритва Оккама)."
+
+- id: archcode-rule-design-conciseness
+  context: [ ["lang", "ru"] ]
+  public:
+    name: "Краткость"
+    description: "Информация предоставляется в максимально сжатом виде."
+
+- id: archcode-rule-design-self-description
+  context: [ ["lang", "ru"] ]
+  public:
+    name: "Самоописание"
+    description: "Модель описывает сама себя и на основе собственных сущностей."
+
+- id: archcode-rule-design-declarative
+  context: [ ["lang", "ru"] ]
+  public:
+    name: "Декларативность"
+    description: "Правила CP‑12 вместо императивной логики."
+
+- id: archcode-rule-design-extensibility
+  context: [ ["lang", "ru"] ]
+  public:
+    name: "Расширяемость"
+    description: "Новые типы добавляются как сущности, не ломая ядро."
+
+- id: archcode-rule-design-distribution
+  context: [ ["lang", "ru"] ]
+  public:
+    name: "Распределение"
+    description: "Описание сущностей выполняется в различных файлах исходя из удобства работы и не связано с иерархией."
+
+l:
+- from: archcode-rule-design
+  to: [archcode-rule-design-minimalism, archcode-rule-design-conciseness, archcode-rule-design-self-description, archcode-rule-design-declarative, archcode-rule-design-extensibility, archcode-rule-design-distribution]
+  type: in

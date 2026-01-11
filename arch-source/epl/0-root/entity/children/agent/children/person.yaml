@@ -1,0 +1,9 @@
+e:
+  person: agent
+
+p:
+  - id: person
+    public:
+      name: Человек
+      description: |
+        [Агент](agent), обладающий сознанием волей и персональной информацией.

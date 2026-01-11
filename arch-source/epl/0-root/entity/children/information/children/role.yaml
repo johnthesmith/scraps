@@ -1,0 +1,10 @@
+e:
+  role: information
+
+p:
+  - id: role
+    public:
+      name: Роль
+      description: |
+        [Информация](information), описывающая функцию или ответственность,
+        которую может выполнять [агент](agent).

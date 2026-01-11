@@ -1,0 +1,9 @@
+e:
+  information: entity
+p:
+- id: information
+  private:
+    name: Информация
+    description: |
+      Абстракция, отражающая состояния [сущностей](entity).
+      Существует только в контексте конкретной сущности.

@@ -1,0 +1,10 @@
+e:
+  vector: information
+
+p:
+- id: context
+  public:
+    name: Вектор
+    description: |
+      [Информация](information), определяющая условия или область видимости
+      для [свойств](property) и [связей](link) [сущностей](entity).
