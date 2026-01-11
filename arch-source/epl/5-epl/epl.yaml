@@ -1,0 +1,36 @@
+e:
+  epl: metamodel
+
+p:
+
+- id: epl
+  vector:
+    lang: en
+  private:
+    name: "EPL"
+    description: |
+      Entity-Property-Link - meta-model for building ontologies through
+      [entities](entity), [properties](property) and [links](link).
+
+- id: epl
+  vector:
+    lang: ru
+  private:
+    name: "EPL"
+    description: |
+      Entity-Property-Link - метамодель для построения онтологий через
+      [сущности](entity), [свойства](property) и [связи](link).
+
+l:
+# Базовые компоненты EPL
+- from: epl
+  to:
+  - entity
+  - property
+  - link
+  - object
+  - agent
+  - information
+  - process
+  type: see-also
+

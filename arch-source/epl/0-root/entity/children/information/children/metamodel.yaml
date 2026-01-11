@@ -1,0 +1,9 @@
+e:
+  metamodel: information
+
+p:
+  - id: metamodel
+    public:
+      name: Метамодель
+      description: |
+        [Информация](information), описывающая структуру и правила онтологии.

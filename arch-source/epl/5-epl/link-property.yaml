@@ -1,0 +1,115 @@
+e:
+  link-from: link-property
+  link-to: link-property
+  link-type: link-property
+  link-context: link-property
+  link-property: property
+
+p:
+- id: link-property
+  private:
+    name: Свойство связи
+    description: |
+      Базовый тип [атрибута](property), который описывает характеристику
+      [связи](link) между сущностями.
+  vector:
+    lang: ru
+
+- id: link-from
+  private:
+    name: Источник
+    description: |
+      [Свойство связи](link-property), указывающее на сущность(и),
+      от которой исходит связь. Определяет начало отношения.
+  vector:
+    lang: ru
+
+- id: link-to
+  private:
+    name: Назначение
+    description: |
+      [Свойство связи](link-property), указывающее на сущность(и),
+      к которой направлена связь. Определяет конец отношения.
+  vector:
+    lang: ru
+
+- id: link-type
+  private:
+    name: Тип связи
+    description: |
+      [Свойство связи](link-property), определяющее семантику отношения
+      между источником и назначением (например, наследование, вложение).
+  vector:
+    lang: ru
+
+- id: link-context
+  private:
+    name: Контекст связи
+    description: |
+      [Свойство связи](link-property), определяющее условия, при которых
+      данная связь актуальна или видима (например, языковой контекст).
+  vector:
+    lang: ru
+
+- id: link-property
+  private:
+    name: Пользовательское свойство связи
+    description: |
+      [Свойство связи](link-property), содержащее дополнительные,
+      нестандартные атрибуты связи, определяемые пользователем.
+  vector:
+    lang: ru
+
+- id: link-property
+  private:
+    name: Link Property
+    description: |
+      Base type of [attribute](property) that describes a characteristic
+      of a [link](link) between entities.
+  vector:
+    lang: en
+
+- id: link-from
+  private:
+    name: From
+    description: |
+      [Link property](link-property) indicating the entity(ies)
+      from which the link originates. Defines the start of the relationship.
+  vector:
+    lang: en
+
+- id: link-to
+  private:
+    name: To
+    description: |
+      [Link property](link-property) indicating the entity(ies)
+      to which the link is directed. Defines the end of the relationship.
+  vector:
+    lang: en
+
+- id: link-type
+  private:
+    name: Link Type
+    description: |
+      [Link property](link-property) defining the semantics of the relationship
+      between source and target (e.g., inheritance, containment).
+  vector:
+    lang: en
+
+- id: link-context
+  private:
+    name: Link Context
+    description: |
+      [Link property](link-property) defining the conditions under which
+      this link is relevant or visible (e.g., language context).
+  vector:
+    lang: en
+
+- id: link-property
+  private:
+    name: Custom Link Property
+    description: |
+      [Link property](link-property) containing additional,
+      non-standard attributes of a link, defined by the user.
+  vector:
+    lang: en

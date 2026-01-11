@@ -1,0 +1,9 @@
+e:
+  relation: information
+
+p:
+  - id: relation
+    private:
+      name: Отношение
+      description: |
+        [](information) о связи или взаимодействии между [сущностями](entity).

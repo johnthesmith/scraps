@@ -1,0 +1,9 @@
+e:
+  link: relation
+
+p:
+-
+  id: link
+  private:
+    name: Связь
+    description: Взаимодействие между сущностями.

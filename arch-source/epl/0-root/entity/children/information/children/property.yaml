@@ -1,0 +1,10 @@
+e:
+  property: information
+
+p:
+  - id: property
+    public:
+      name: Свойство
+      description: |
+        [Информация](information), описывающая характеристику или качество
+        [сущности](entity).

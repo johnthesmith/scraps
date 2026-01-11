@@ -1,0 +1,10 @@
+e:
+  document: information
+
+p:
+  - id: document
+    public:
+      name: Документ
+      description: |
+        Формально описанная [Информация](information). Однозначно
+        идентифицируется.

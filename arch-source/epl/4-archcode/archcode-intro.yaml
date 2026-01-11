@@ -1,0 +1,11 @@
+e:
+  archcode-intro: document
+p:
+-
+  id: archcode-intro
+  private:
+    name: Вступление в archcode
+    description: |
+      Документ предоставляет базовую информацию по archcode.
+    hint: Документ с описанием archchcode
+    content:

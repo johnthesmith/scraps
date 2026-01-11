@@ -1,0 +1,19 @@
+e:
+  archcode-licence: document
+p:
+-
+  id: archcode-licence
+  private:
+    name: Лицензия archcode
+    hint: Лицензионное соглашение archchcode
+    description: |
+      Документ предоставляет лицензионное соглашение [](archcode).
+l:
+-
+  from: archcode
+  to: archcode-licence
+  type: see-also
+-
+  from: archcode-licence
+  to: archcode
+  type: see-also

@@ -1,0 +1,80 @@
+e:
+  entity-property: property
+  entity-property-name: entity-property
+  entity-property-description: entity-property
+  entity-property-content: entity-property
+
+p:
+- id: entity-property
+  private:
+    name: Свойство сущности
+    description: |
+      Базовый тип [атрибута](property), который может быть присвоен
+      [сущности](entity) для её описания. Определяет структуру метаданных.
+  vector:
+    lang: ru
+
+- id: entity-property
+  private:
+    name: Entity Property
+    description: |
+      Base type of [attribute](property) that can be assigned to an
+      [entity](entity) for its description. Defines metadata structure.
+  vector:
+    lang: en
+
+- id: entity-property-name
+  private:
+    name: Название
+    description: |
+      Основное максимально короткое идентифицирующее свойство сущности. Может
+      содержать имя или аббревиатуру. Используется для ссылок и поиска.
+  vector:
+    lang: ru
+
+- id: entity-property-name
+  private:
+    name: Name
+    description: |
+      Primary minimal identifying property of an entity. May contain
+      a name or abbreviation. Used for references and search.
+  vector:
+    lang: en
+
+- id: entity-property-description
+  private:
+    name: Описание
+    description: |
+      Развернутое текстовое определение сущности или расшифровка аббревиатуры.
+      Не должно включать слова, используемые в атрибуте [](entity-property-name).
+      Даёт смысловое понимание.
+  vector:
+    lang: ru
+
+- id: entity-property-description
+  private:
+    name: Description
+    description: |
+      Extended textual definition of an entity or abbreviation explanation.
+      Should not include words used in the [](entity-property-name) attribute.
+      Provides semantic understanding.
+  vector:
+    lang: en
+
+- id: entity-property-content
+  private:
+    name: Содержание
+    description: |
+      Основная информационная нагрузка сущности. Может содержать структурированные
+      данные, текст, разметку или вложенные элементы. Несёт основную ценность.
+  vector:
+    lang: ru
+
+- id: entity-property-content
+  private:
+    name: Content
+    description: |
+      Main informational payload of an entity. May contain structured
+      data, text, markup, or nested elements. Carries primary value.
+  vector:
+    lang: en

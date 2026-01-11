@@ -1,0 +1,9 @@
+e:
+  animal: agent
+
+p:
+  - id: animal
+    public:
+      name: Животное
+      description: |
+        [Агент](agent) биологического происхождения с ограниченной волей.

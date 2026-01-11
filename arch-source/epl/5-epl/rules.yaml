@@ -1,0 +1,125 @@
+e:
+  archcode-rule-structure: information
+  archcode-rule-typing: information
+  archcode-rule-property: information
+  archcode-rule-context: information
+  archcode-rule-inheritance: information
+  archcode-rule-link: information
+  archcode-rule-loading: information
+  archcode-rule-export: information
+  archcode-rule-multilingual: information
+  archcode-rule-design: information
+
+p:
+  - id: archcode-rule-structure
+    context: [[ "lang", "ru" ]]
+    private:
+      name: "Базовая структура EPL"
+      description: |
+        Модель состоит из трёх разделов: `e`(сущности), `p`(свойства), `l`(связи).
+        Все описания строятся на основе [сущностей](entity).
+        Сущности обладают [свойствами](property) и связаны между собой
+        [связями](link).
+
+  - id: archcode-rule-typing
+    context: [ ["lang", "ru"] ]
+    private:
+      name: "Типизация сущностей"
+      description: |
+        Каждая сущность имеет тип (type), который тоже сущность. На основе типов
+        строится иерархия сущностей. Первый уровень самотипизирующая
+        [](entity). Второй уровнь [](object), [](agent), [](information),
+        [](process). Иерархия: entity → базовый_тип → далее иные типы. Сущности
+        декларируются массивом ключ:значение в базовом ключе `e`;
+
+  # 3. Свойства
+  - id: archcode-rule-property
+    context: [ ["lang", "ru"] ]
+    private:
+      name: "Правила свойств сущностей"
+      description: |
+        Свойства сущностей перчисляются в массиве `e`, каждый элемент привязан к
+        сущности через атрибут `id`. Каждый элемент может иметь опциональный
+        [](context). Свойства описываются в секциях: `private` - только для
+        своей сущности, `public` - для наследования потомками по типам.
+        Предочтение отдатеся `private`. Свойство сущности извлекается из `private`,
+        при отсуствии из `public`, при отсутсвии из `public` родителей.
+
+  # 4. Контекст и CP-12
+  - id: archcode-rule-context
+    context: [ ["lang", "ru"] ]
+    public:
+      name: "Контекст и CP‑12"
+      description: |
+        Контекст — отношение (context: relation).
+        Сопоставление через 12 операторов CP‑12:
+        * Типы: EQUALS, CONTAINS, INTERSECTS
+        * Кванторы: ∀ (для всех) / ∃ (хотя бы один)
+        Пример: AND_OR_CONTAINS — каждый кортеж ключа содержится хотя бы в одном кортеже замка.
+
+  # 5. Наследование
+  - id: archcode-rule-inheritance
+    context: [ ["lang", "ru"] ]
+    public:
+      name: "Наследование"
+      description: |
+        Наследуются только public свойства.
+        Цепочка: сущность → её тип → тип типа → … → entity.
+        Петли запрещены. Самотипизация (entity: entity) — корень.
+
+  # 6. Связи
+  - id: archcode-rule-link
+    context: [ ["lang", "ru"] ]
+    public:
+      name: "Связи (links)"
+      description: |
+        Связь — элемент в массиве `l` для [](epl).
+        Поля: `from`, `to`, `type`, `context`, `properties`.
+        Свойства связи — дополнительные атрибуты.
+
+  # 7. Загрузка модели
+  - id: archcode-rule-loading
+    context: [ ["lang", "ru"] ]
+    public:
+      name: "Загрузка модели (assemble)"
+      description: |
+        Рекурсивный обход файлов (YAML/JSON).
+        Файл должен иметь enabled: true (или отсутствовать).
+        Данные передаются в ingest.
+        Постобработка: проверка целостности типов.
+
+  # 8. Экспорт
+  - id: archcode-rule-export
+    context: [ ["lang", "ru"] ]
+    public:
+      name: "Экспорт (export)"
+      description: |
+        Генерирует каноническую структуру {e: …, p: …, l: …}.
+        Удаляет служебные поля (source).
+        Сохраняет только private или public (не оба).
+
+  # 9. Мультиязычность
+  - id: archcode-rule-multilingual
+    context: [ ["lang", "ru"] ]
+    public:
+      name: "Мультиязычность"
+      description: |
+        Язык — контекст ["lang", "xx"].
+        Сущности могут иметь свойства на разных языках.
+        Описания языков даны на самих языках (рекурсивно).
+
+  # 10. Принципы проектирования
+  - id: archcode-rule-design
+    context: [ ["lang", "ru"] ]
+    public:
+      name: "Принципы проектирования EPL"
+
+l:
+-
+  from:
+  - archcode-rule-inheritance
+  - archcode-rule-property
+  to:
+  - archcode-rule-inheritance
+  - archcode-rule-property
+  type: see-also

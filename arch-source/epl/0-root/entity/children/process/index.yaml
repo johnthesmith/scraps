@@ -1,0 +1,11 @@
+e:
+  process: entity
+
+p:
+-
+  id: process
+  private:
+    name: Процесс
+    description:
+      Последовательность изменений состояния [сущностей](entity).
+      Преобразует [информацию](information) и/или [объекты](object).
