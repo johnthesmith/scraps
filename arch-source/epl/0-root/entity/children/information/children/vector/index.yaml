@@ -2,7 +2,7 @@ e:
   vector: information
 
 p:
-- id: context
+- id: vector
   public:
     name: Вектор
     description: |
