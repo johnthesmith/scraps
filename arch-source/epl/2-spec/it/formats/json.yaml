@@ -1,0 +1,7 @@
+e:
+  json: document
+
+p:
+  - id: json
+    public:
+      name: json

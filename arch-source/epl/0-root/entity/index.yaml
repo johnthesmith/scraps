@@ -1,8 +1,20 @@
 # Entity
+# Base element of EPL model
+
 e:
   entity: entity
 
 p:
+-
+  # Public properties of entity type
+  # Inherited by all descendants of this type
+  id: entity
+  public:
+    # Hyperlink template for entity (used in documentation links)
+    hyperlink: f:./hyperlink.md
+    # Entity card template (for detailed representation)
+    card: f:./ru/card.md
+    empty-property: "`...`"
 -
   id: entity
   vector:
@@ -12,15 +24,14 @@ p:
     description: |
       Базовая самоописывающаяся идентифицируемая сущность.
       Порождает все иные понятия и сущности через их типизацию.
-    content: |
-      1. Каждая сущность должна быть описана;
-      2. Описание не должно использовать собственное имя сущности;
-      3. Описание не должно ссылаться на сущности нижних уровней;
-      4. Сущности объединяются в единую онтологию через отношения типизации;
-      5. При равных гипотезах выбирается простейшая (бритва Оккама);
-      6. Структура онтологии должна быть минимально необходимой.
+    content: f:./ru/content.md
+
 -
   id: entity
-  public:
-    hyperlink: file:./hyperlink.md
-    card: file:./card.md
+  vector:
+    lang: ru
+    gram-number: plural
+  private:
+    name: Сущности
+    description: p:&lang=ru
+    content: p:&lang=ru

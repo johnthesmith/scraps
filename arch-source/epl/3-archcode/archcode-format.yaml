@@ -1,0 +1,22 @@
+e:
+  archcode-format: document
+
+p:
+  - id: archcode-format
+    public:
+      name: Форматы исходников archcode
+      description: |
+        Перечень форматов документов, используемый в [](archcode). К таковым
+        относятся [](md), [](yaml), [](json), [](svg), [](dot). Допустимо
+        использование любых инфых форматов `plantext`.
+
+l:
+-
+  from: archcode-format
+  to:
+    svg
+    md
+    yaml
+    json
+    dot
+  type: see-also

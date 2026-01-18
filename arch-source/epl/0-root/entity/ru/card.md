@@ -1,14 +1,14 @@
-# %name% (%id%)
+# %/name&lang=ru&gram-number=singular% (%/id%)
 
 <cl cmd="parents" id="%id%" record="child.md" delimiter="/" />
 
 ---
 
-%description%
+%/description%
 
 ---
 
-%content%
+%/content%
 
 
 

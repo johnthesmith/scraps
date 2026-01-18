@@ -1,0 +1,9 @@
+e:
+  yaml: document
+
+p:
+  - id: yaml
+    public:
+      name: yaml
+      description: |
+        См https://en.wikipedia.org/wiki/YAML
