@@ -7,7 +7,7 @@ p:
   vector:
     lang: en
   private:
-    name: "EPL"
+    name: EPL
     description: |
       Entity-Property-Link - meta-model for building ontologies through
       [entities](entity), [properties](property) and [links](link).
@@ -16,7 +16,7 @@ p:
   vector:
     lang: ru
   private:
-    name: "EPL"
+    name: EPL
     description: |
       Entity-Property-Link - метамодель для построения онтологий через
       [сущности](entity), [свойства](property) и [связи](link).

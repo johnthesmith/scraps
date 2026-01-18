@@ -1,0 +1,13 @@
+e:
+  archcode-editor: role
+
+p:
+- id: archcode-editor
+  public:
+    name: Редактор archcode
+    description: |
+      [](role) вносящего изменения в документацию [](archcode).
+l:
+- from: archcode-editor
+  to: archcode
+  type: see-also

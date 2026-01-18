@@ -1,0 +1,223 @@
+e:
+  # Векторные компоненты
+  gram-case: vector-component
+
+  # Падежи (ISO 24610-1 + расширения)
+  nom: gram-case      # именительный
+  gen: gram-case      # родительный
+  dat: gram-case      # дательный
+  acc: gram-case      # винительный
+  ins: gram-case      # творительный
+  loc: gram-case      # местный
+  voc: gram-case      # звательный
+  par: gram-case      # частичный
+  ess: gram-case      # состоятельный
+  tra: gram-case      # превратительный
+  com: gram-case      # совместный
+
+p:
+# === Грамматический падеж (ISO 24610-1) ===
+- id: gram-case
+  vector: {lang: en}
+  private:
+    name: Grammatical case
+    description: |
+      Grammatical category expressing syntactic role of a noun.
+      Defined by [ISO 24610-1](@iso-24610-1) as feature `Case`.
+  public:
+    iso: 24610-1
+
+- id: gram-case
+  vector: {lang: ru}
+  private:
+    name: Падеж
+    description: |
+      Грамматическая категория, выражающая синтаксическую роль имени.
+      Определена в [ISO 24610-1](@iso-24610-1) как признак `Case`.
+
+# --- Именительный ---
+- id: nom
+  vector: {lang: en}
+  private:
+    name: Nominative
+    description: Case of the subject, naming the entity. ISO `Nom`.
+  public:
+    iso: Nom
+
+- id: nom
+  vector: {lang: ru}
+  private:
+    name: Именительный
+    description: |
+      Падеж подлежащего, называющий предмет. ISO `Nom`.
+      Пример: *Кто/что?* — **томат**, **дом**, **идея**.
+
+# --- Родительный ---
+- id: gen
+  vector: {lang: en}
+  private:
+    name: Genitive
+    description: Case of possession, partitive and absence. ISO `Gen`.
+  public:
+    iso: Gen
+
+- id: gen
+  vector: {lang: ru}
+  private:
+    name: Родительный
+    description: |
+      Падеж принадлежности, части и отсутствия. ISO `Gen`.
+      Пример: *Кого/чего?* — **томата**, **дома**, **идеи**.
+
+# --- Дательный ---
+- id: dat
+  vector: {lang: en}
+  private:
+    name: Dative
+    description: Case of the indirect object, recipient. ISO `Dat`.
+  public:
+    iso: Dat
+
+- id: dat
+  vector: {lang: ru}
+  private:
+    name: Дательный
+    description: |
+      Падеж адресата действия. ISO `Dat`.
+      Пример: *Кому/чему?* — **томату**, **дому**, **идее**.
+
+# --- Винительный ---
+- id: acc
+  vector: {lang: en}
+  private:
+    name: Accusative
+    description: Case of the direct object. ISO `Acc`.
+  public:
+    iso: Acc
+
+- id: acc
+  vector: {lang: ru}
+  private:
+    name: Винительный
+    description: |
+      Падеж прямого объекта. ISO `Acc`.
+      Пример: *Кого/что?* — **томат**, **дом**, **идею**.
+
+# --- Творительный ---
+- id: ins
+  vector: {lang: en}
+  private:
+    name: Instrumental
+    description: Case of instrument or means. ISO `Ins`.
+  public:
+    iso: Ins
+
+- id: ins
+  vector: {lang: ru}
+  private:
+    name: Творительный
+    description: |
+      Падеж орудия или средства действия. ISO `Ins`.
+      Пример: *Кем/чем?* — **томатом**, **домом**, **идеей**.
+
+# --- Местный ---
+- id: loc
+  vector: {lang: en}
+  private:
+    name: Locative
+    description: Case of location. ISO `Loc`.
+  public:
+    iso: Loc
+
+- id: loc
+  vector: {lang: ru}
+  private:
+    name: Местный
+    description: |
+      Падеж места. ISO `Loc`.
+      Пример: *О ком/о чём?* — **о томате**, **о доме**, **об идее**.
+
+# --- Звательный ---
+- id: voc
+  vector: {lang: en}
+  private:
+    name: Vocative
+    description: Case of address. ISO `Voc`.
+  public:
+    iso: Voc
+
+- id: voc
+  vector: {lang: ru}
+  private:
+    name: Звательный
+    description: |
+      Падеж обращения. ISO `Voc`.
+      Пример: *О!* — **томате!**, **доме!**, **идее!**.
+
+# --- Частичный ---
+- id: par
+  vector: {lang: en}
+  private:
+    name: Partitive
+    description: Case of partial object. ISO `Par`.
+  public:
+    iso: Par
+
+- id: par
+  vector: {lang: ru}
+  private:
+    name: Частичный
+    description: |
+      Падеж частичного объекта. ISO `Par`.
+      Пример: *Часть чего?* — **томату**, **дому**, **идею**.
+
+# --- Состоятельный ---
+- id: ess
+  vector: {lang: en}
+  private:
+    name: Essive
+    description: Case of temporary state. ISO `Ess`.
+  public:
+    iso: Ess
+
+- id: ess
+  vector: {lang: ru}
+  private:
+    name: Состоятельный
+    description: |
+      Падеж временного состояния. ISO `Ess`.
+      Пример: *В качестве кого/чего?* — **томатом**, **домом**, **идеей**.
+
+# --- Превратительный ---
+- id: tra
+  vector: {lang: en}
+  private:
+    name: Translative
+    description: Case of change into something. ISO `Tra`.
+  public:
+    iso: Tra
+
+- id: tra
+  vector: {lang: ru}
+  private:
+    name: Превратительный
+    description: |
+      Падеж превращения. ISO `Tra`.
+      Пример: *Превратиться в кого/во что?* — **в томат**, **в дом**, **в идею**.
+
+# --- Совместный ---
+- id: com
+  vector: {lang: en}
+  private:
+    name: Comitative
+    description: Case of accompaniment. ISO `Com`.
+  public:
+    iso: Com
+
+- id: com
+  vector: {lang: ru}
+  private:
+    name: Совместный
+    description: |
+      Падеж совместности. ISO `Com`.
+      Пример: *Вместе с кем/чем?* — **с томатом**, **с домом**, **с идеей**.

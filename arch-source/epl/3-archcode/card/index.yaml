@@ -1,0 +1,27 @@
+# Archcode Card Entity
+e:
+  archcode-card: document
+
+p:
+-
+  id: archcode-card
+  vector:
+    lang: ru
+  private:
+    name: Карточка сущности
+    description: |
+      Документ с описанием [](entity&lang=ru&gram-case=gen) для
+      [](epl)-моделей. Строится из онтологические сущности на основе шаблона в
+      структурированные карточки документации фомата [](md).
+    content: f:./index.md
+-
+  id: archcode-card
+  vector:
+    lang: en
+  private:
+    name: Archcode Card
+    description: |
+      A document describing an [](entity&lang=en) for
+      [](epl)-models. Built from ontological entities based on a template into
+      structured documentation cards in [](md) format.
+    content: f:./index.md

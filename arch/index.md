@@ -1,20 +1,23 @@
 # Archcode - архитектура как код
 
-Ресурс содержит документацию на основе . Документация строится на 
-основе [сущностей](/card/a6073f72c0bd531adf71297db0a151bde12379cf56af24eb8677673d25f89fb3.md "") файлов. Авторы документации могут использовать 
-различне форматы описания, включая в них ссылки на сущности. После сборки 
-результат документации представляется в виде готового файлового проекта который 
-может быть загружен в различные ресурсы вроде [git](/card/ed8b1dac222559a3a140affeb01f1c0d262965ba33f4931e59cf699f0c9314f4.md ""), `unknown-link:wiki`, либо 
-экспортирован в виде веб проекта.
+Ресурс содержит документацию как код на основе[EPL](/card/epl/default.md ""). 
+[Редактор archcode](/card/archcode-editor/default.md "") пишут исходники документов в различных 
+[форматах](/card/archcode-format/default.md ""), включая в них ссылки на [Сущности](/card/entity/gram-number=plural.md "").
+
+Исходники документации при сборке конвертируются в готовый файловый проект, 
+загружаемый в репозитории [git](/card/git/default.md ""), [wiki](/card/wiki/default.md ""), либо web ресурс.
 
 
 
 ## Информация
 
-1. [Вступление в archcode](/card/a0c3a4546c01f2d00fd99c70a51d6d3515cab87e910383a5a3d67b183b08c892.md "Документ с описанием archchcode")
-2. [Archcode](/card/f41de09a01503404adf742de8c3e70ce5a4917a142276a5fda770b95fa7dc8b8.md "")
-3. [Лицензия archcode](/card/c4a623c7cc671c290bd037f165051f63291c4abf001d10e201864af4db324782.md "Лицензионное соглашение archchcode")
+1. [Вступление в archcode](/card/archcode-intro/default.md "Документ с описанием archchcode")
+2. 
+3. [Лицензия archcode](/card/archcode-licence/default.md "Лицензионное соглашение archchcode")
 
 
 
 1. [](./test.md#chapter "")
+
+
+[Карточка сущности](/card/archcode-card/default.md "")

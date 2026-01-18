@@ -1,0 +1,9 @@
+e:
+  svg: document
+
+p:
+- id: svg
+  public:
+    name: svg
+    description: |
+      Плантекст формат векторной графики.

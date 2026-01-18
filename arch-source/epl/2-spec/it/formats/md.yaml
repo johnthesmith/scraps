@@ -1,0 +1,14 @@
+e:
+  md: document
+
+p:
+- id: md
+  public:
+    name: md
+    description: |
+      Текстовый формат plantext для документирования.
+
+l:
+- type: see-also
+  from: md
+  to: git
