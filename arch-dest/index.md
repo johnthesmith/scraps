@@ -1,8 +1,8 @@
 # Archcode - архитектура как код
 
-1. [](./doc/doc.md "")
-2. [](doc/doc.md "")
-3. [](./test.md "")
+1. [test1](./doc/doc.md "")
+2. [test2](doc/doc.md "")
+3. [test3](./test.md "")
 
 
 
