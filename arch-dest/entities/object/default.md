@@ -4,9 +4,9 @@
 
 ---
 
-[Сущность](/entities/entity/default.md ""), идентифицируемая как физический или виртуальный
+[Сущность](/arch-dest/entities/entity/default.md ""), идентифицируемая как физический или виртуальный
 факт. Существует, но не обладает собственной волей, являясь пассивным
-носителем [информации](/entities/information/default.md "").
+носителем [информации](/arch-dest/entities/information/default.md "").
 
 
 ---

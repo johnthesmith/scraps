@@ -1,8 +1,8 @@
 # Archcode - архитектура как код
 
-
-
-
+1. [](./doc/doc.md)
+2. [](doc/doc.md)
+3. [](./test.md#chapter)
 
 
 
@@ -25,9 +25,6 @@
 2. [](archcode-format)
 3. [](archcode-licence)
 
-
-
-1. [](./test.md#chapter)
 
 
 [](archcode-card)

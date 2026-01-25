@@ -5,7 +5,7 @@
 ---
 
 Entity-Property-Link - meta-model for building ontologies through
-[entities](/entities/entity/default.md ""), [properties](/entities/property/default.md "") and [links](/entities/link/default.md "").
+[entities](/arch-dest/entities/entity/default.md ""), [properties](/arch-dest/entities/property/default.md "") and [links](/arch-dest/entities/link/default.md "").
 
 
 ---

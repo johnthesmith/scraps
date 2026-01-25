@@ -4,8 +4,8 @@
 
 ---
 
-[Информация](/entities/information/default.md ""), описывающая характеристику или качество
-[сущности](/entities/entity/default.md "").
+[Информация](/arch-dest/entities/information/default.md ""), описывающая характеристику или качество
+[сущности](/arch-dest/entities/entity/default.md "").
 
 
 ---

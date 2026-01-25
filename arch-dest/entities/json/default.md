@@ -4,7 +4,7 @@
 
 ---
 
-Формально описанная [Информация](/entities/information/default.md ""). Однозначно
+Формально описанная [Информация](/arch-dest/entities/information/default.md ""). Однозначно
 идентифицируется.
 
 
