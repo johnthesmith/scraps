@@ -4,7 +4,7 @@
 
 ---
 
-[Роль](/entities/role/default.md "") вносящего изменения в документацию `unknown-link:archcode`.
+[Роль](/arch-dest/entities/role/default.md "") вносящего изменения в документацию `unknown-link:archcode`.
 
 
 ---

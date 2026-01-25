@@ -4,8 +4,8 @@
 
 ---
 
-[Сущность](/entities/entity/default.md "") с возможностью инициативы и воздействия на
-[объекты](/entities/object/default.md "").
+[Сущность](/arch-dest/entities/entity/default.md "") с возможностью инициативы и воздействия на
+[объекты](/arch-dest/entities/object/default.md "").
 
 
 ---

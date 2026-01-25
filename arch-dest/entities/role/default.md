@@ -4,8 +4,8 @@
 
 ---
 
-[Информация](/entities/information/default.md ""), описывающая функцию или ответственность,
-которую может выполнять [агент](/entities/agent/default.md "").
+[Информация](/arch-dest/entities/information/default.md ""), описывающая функцию или ответственность,
+которую может выполнять [агент](/arch-dest/entities/agent/default.md "").
 
 
 ---
