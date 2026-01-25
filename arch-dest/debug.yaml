@@ -1,0 +1,22 @@
+{
+    "stat": {
+        "begin": "2026-01-25 17:08:29.723925",
+        "count": {
+            "entities": 78,
+            "properties": 84,
+            "links": 8
+        }
+    },
+    "warning": {
+        "unknown-link": {
+            "archcode": {
+                "/entities/archcode-editor/default.md": 1,
+                "/entities/archcode-format/default.md": 1,
+                "/entities/archcode-licence/default.md": 1
+            },
+            "file": {
+                "/entities/git/default.md": 1
+            }
+        }
+    }
+}
