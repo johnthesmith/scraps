@@ -1,0 +1,8 @@
+e:
+  attribute: data
+p:
+  - id: attribute
+    private:
+      name: Атрибут
+      description: |
+        Описание свойства сущности.

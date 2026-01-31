@@ -1,9 +1,8 @@
 e:
-  file: file
-
+  file: information
 p:
   - id: file
-    public:
+    private:
       name: Файл
       description: |
         Фрагмент информации, размещенной на каком либо носителе,

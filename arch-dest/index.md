@@ -1,16 +1,6 @@
 # Archcode - архитектура как код
 
-1. [test1](./doc/doc.md "")
-2. [test2](doc/doc.md "")
-3. [test3](./test.md "")
-
-
-
-
-
-
-
-Ресурс содержит документацию как код на основе[EPL](/arch-dest/entities/epl/default.md ""). 
+Ресурс содержит [DaC](/arch-dest/entities/dac/default.md "") на основе модели [EPL](/arch-dest/entities/epl/default.md "").
 [Редактор archcode](/arch-dest/entities/archcode-editor/default.md "") пишут исходники документов в различных 
 [форматах](/arch-dest/entities/archcode-format/default.md ""), включая в них ссылки на [Сущности](/arch-dest/entities/entity/gram-number=plural.md "").
 
@@ -25,6 +15,7 @@
 2. [Форматы исходников archcode](/arch-dest/entities/archcode-format/default.md "")
 3. [Лицензия archcode](/arch-dest/entities/archcode-licence/default.md "Лицензионное соглашение archchcode")
 
+---
 
-
-[Карточка сущности](/arch-dest/entities/archcode-card/default.md "")
+Момент сборки: 2026-01-28 18:48:25
+`unknown-link:/arch-dest/debug.json`

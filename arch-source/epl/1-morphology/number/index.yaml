@@ -8,54 +8,54 @@ e:
   dual: gram-number         # двойственное
 
 p:
-# === Грамматическое число ===
+# Грамматическое число
 - id: gram-number
-  vector: {lang: en}
+  vector: [ lang: en ]
   private:
     name: Grammatical number
     description: Grammatical category denoting quantity.
 
 - id: gram-number
-  vector: {lang: ru}
+  vector: [ lang: ru ]
   private:
     name: Число
     description: Грамматическая категория, обозначающая количество.
 
-# --- Единственное ---
+# Единственное число
 - id: singular
-  vector: {lang: en}
+  vector: [ lang: en ]
   private:
     name: Singular
     description: One entity or item.
 
 - id: singular
-  vector: {lang: ru}
+  vector: [ lang: ru ]
   private:
     name: Единственное
     description: Один предмет или сущность.
 
-# --- Множественное ---
+# Множественное число
 - id: plural
-  vector: {lang: en}
+  vector: [ lang: en ]
   private:
     name: Plural
     description: Two or more entities.
 
 - id: plural
-  vector: {lang: ru}
+  vector: [ lang: ru ]
   private:
     name: Множественное
     description: Два или более предмета.
 
-# --- Двойственное ---
+# Двойственное число
 - id: dual
-  vector: {lang: en}
+  vector: [ lang: en ]
   private:
     name: Dual
     description: Exactly two entities.
 
 - id: dual
-  vector: {lang: ru}
+  vector: [ lang: ru ]
   private:
     name: Двойственное
     description: Ровно два предмета.

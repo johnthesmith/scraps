@@ -1,0 +1,17 @@
+{
+    "stat": {
+        "begin": "2026-01-28 18:48:25.446386",
+        "count": {
+            "entities": 90,
+            "properties": 89,
+            "links": 8
+        }
+    },
+    "warning": {
+        "unknown-link": {
+            "/arch-dest/debug.json": {
+                "index.md": 1
+            }
+        }
+    }
+}

@@ -1,0 +1,9 @@
+e:
+  dac: concept
+p:
+  - id: dac
+    public:
+      name: DaC
+      description: |
+        Документация как код, пишется в текстовых форматах (Markdown,
+        reStructuredText, AsciiDoc).

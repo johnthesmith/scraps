@@ -1,9 +1,27 @@
-# Entity
-# Base element of EPL model
+# Entity of EPL metamodel - base element
 
+# boolean enable 
+#  true - file will be used for model (default)
+#  false - file fill not be used for model
+enabled: true
+
+
+# array<string> zone
+# list of zones for assemble
+# while metamodel is built, only files within the given will be used
+zone: []
+
+
+# array<entity>:<type-of-entity> e
+# List of typed entities.
+# Each type is en entity and must be declared in this array.
 e:
   entity: entity
 
+
+
+# array p
+# properties
 p:
 -
   # Public properties of entity type

@@ -2,8 +2,8 @@ e:
   git: software
 
 p:
-  - id: git
-    public:
-      name: git
-      description: |
-        Програмное обеспечение для версионирования [файлов](file).
+- id: git
+  public:
+    name: git
+    description: |
+      Програмное обеспечение для версионирования [файлов](file).

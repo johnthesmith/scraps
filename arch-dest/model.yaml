@@ -1,0 +1,1060 @@
+---
+e:
+  archcode-rule-structure: information
+  archcode-rule-typing: information
+  archcode-rule-property: information
+  archcode-rule-context: information
+  archcode-rule-inheritance: information
+  archcode-rule-link: information
+  archcode-rule-loading: information
+  archcode-rule-export: information
+  archcode-rule-multilingual: information
+  archcode-rule-design: information
+  archcode-rule-design-minimalism: archcode-rule-design
+  archcode-rule-design-conciseness: archcode-rule-design
+  archcode-rule-design-self-description: archcode-rule-design
+  archcode-rule-design-declarative: archcode-rule-design
+  archcode-rule-design-extensibility: archcode-rule-design
+  archcode-rule-design-distribution: archcode-rule-design
+  link-from: link-property
+  link-to: link-property
+  link-type: link-property
+  link-context: link-property
+  link-property: property
+  epl: metamodel
+  entity-property: property
+  entity-property-name: entity-property
+  entity-property-description: entity-property
+  entity-property-content: entity-property
+  archcode-card: document
+  archcode-build: b-process
+  archcode-intro: document
+  archcode-editor: role
+  archcode: software
+  archcode-licence: document
+  archcode-format: document
+  svg: document
+  json: document
+  yaml: document
+  md: document
+  dot: document
+  data: information
+  dac: concept
+  file: information
+  attribute: data
+  code: information
+  wiki: software
+  git: software
+  software: artifact
+  b-process: process
+  b-entity: information
+  gram-number: vector-component
+  singular: gram-number
+  plural: gram-number
+  dual: gram-number
+  lang: vector-component
+  en: lang
+  ru: lang
+  gram-case: vector-component
+  nom: gram-case
+  gen: gram-case
+  dat: gram-case
+  acc: gram-case
+  ins: gram-case
+  loc: gram-case
+  voc: gram-case
+  par: gram-case
+  ess: gram-case
+  tra: gram-case
+  com: gram-case
+  role: information
+  relation: information
+  vector: information
+  vector-component: information
+  document: information
+  in: link
+  link: relation
+  see-also: link
+  property: information
+  operator: information
+  concept: document
+  metamodel: information
+  information: entity
+  process: entity
+  deity: agent
+  person: agent
+  ai: agent
+  organization: agent
+  animal: agent
+  agent: entity
+  artifact: object
+  object: entity
+  entity: entity
+p:
+- id: archcode-rule-structure
+  private:
+    name: Базовая структура EPL
+    description: |
+      Модель состоит из трёх разделов: `e`(сущности), `p`(свойства), `l`(связи).
+      Все описания строятся на основе [сущностей](entity).
+      Сущности обладают [свойствами](property) и связаны между собой
+      [связями](link).
+- id: archcode-rule-typing
+  private:
+    name: Типизация сущностей
+    description: |
+      Каждая сущность имеет тип (type), который тоже сущность. На основе типов
+      строится иерархия сущностей. Первый уровень самотипизирующая
+      [](entity). Второй уровнь [](object), [](agent), [](information),
+      [](process). Иерархия: entity → базовый_тип → далее иные типы. Сущности
+      декларируются массивом ключ:значение в базовом ключе `e`;
+- id: archcode-rule-property
+  private:
+    name: Правила свойств сущностей
+    description: |
+      Свойства сущностей перчисляются в массиве `e`, каждый элемент привязан к
+      сущности через атрибут `id`. Каждый элемент может иметь опциональный
+      [](context). Свойства описываются в секциях: `private` - только для
+      своей сущности, `public` - для наследования потомками по типам.
+      Предочтение отдатеся `private`. Свойство сущности извлекается из `private`,
+      при отсуствии из `public`, при отсутсвии из `public` родителей.
+- id: archcode-rule-context
+  public:
+    name: Контекст и CP‑12
+    description: |
+      Контекст — отношение (context: relation).
+      Сопоставление через 12 операторов CP‑12:
+      * Типы: EQUALS, CONTAINS, INTERSECTS
+      * Кванторы: ∀ (для всех) / ∃ (хотя бы один)
+      Пример: AND_OR_CONTAINS — каждый кортеж ключа содержится хотя бы в одном кортеже замка.
+- id: archcode-rule-inheritance
+  public:
+    name: Наследование
+    description: |
+      Наследуются только public свойства.
+      Цепочка: сущность → её тип → тип типа → … → entity.
+      Петли запрещены. Самотипизация (entity: entity) — корень.
+- id: archcode-rule-link
+  public:
+    name: Связи (links)
+    description: |
+      Связь — элемент в массиве `l` для [](epl).
+      Поля: `from`, `to`, `type`, `context`, `properties`.
+      Свойства связи — дополнительные атрибуты.
+- id: archcode-rule-loading
+  public:
+    name: Загрузка модели (assemble)
+    description: |
+      Рекурсивный обход файлов (YAML/JSON).
+      Файл должен иметь enabled: true (или отсутствовать).
+      Данные передаются в ingest.
+      Постобработка: проверка целостности типов.
+- id: archcode-rule-export
+  public:
+    name: Экспорт (export)
+    description: |
+      Генерирует каноническую структуру {e: …, p: …, l: …}.
+      Удаляет служебные поля (source).
+      Сохраняет только private или public (не оба).
+- id: archcode-rule-multilingual
+  public:
+    name: Мультиязычность
+    description: |
+      Язык — контекст ["lang", "xx"].
+      Сущности могут иметь свойства на разных языках.
+      Описания языков даны на самих языках (рекурсивно).
+- id: archcode-rule-design
+  public:
+    name: Принципы проектирования EPL
+- id: archcode-rule-design-minimalism
+  public:
+    name: Минимализм
+    description: Не плоди лишних сущностей сверх необходимости (бритва Оккама).
+- id: archcode-rule-design-conciseness
+  public:
+    name: Краткость
+    description: Информация предоставляется в максимально сжатом виде.
+- id: archcode-rule-design-self-description
+  public:
+    name: Самоописание
+    description: Модель описывает сама себя и на основе собственных сущностей.
+- id: archcode-rule-design-declarative
+  public:
+    name: Декларативность
+    description: Правила CP‑12 вместо императивной логики.
+- id: archcode-rule-design-extensibility
+  public:
+    name: Расширяемость
+    description: Новые типы добавляются как сущности, не ломая ядро.
+- id: archcode-rule-design-distribution
+  public:
+    name: Распределение
+    description: Описание сущностей выполняется в различных файлах исходя из удобства
+      работы и не связано с иерархией.
+- id: link-property
+  private:
+    name: Свойство связи
+    description: |
+      Базовый тип [атрибута](property), который описывает характеристику
+      [связи](link) между сущностями.
+  vector:
+    lang:
+    - ru
+- id: link-property
+  private:
+    name: Пользовательское свойство связи
+    description: |
+      [Свойство связи](link-property), содержащее дополнительные,
+      нестандартные атрибуты связи, определяемые пользователем.
+  vector:
+    lang:
+    - ru
+- id: link-property
+  private:
+    name: Link Property
+    description: |
+      Base type of [attribute](property) that describes a characteristic
+      of a [link](link) between entities.
+  vector:
+    lang:
+    - en
+- id: link-property
+  private:
+    name: Custom Link Property
+    description: |
+      [Link property](link-property) containing additional,
+      non-standard attributes of a link, defined by the user.
+  vector:
+    lang:
+    - en
+- id: link-from
+  private:
+    name: Источник
+    description: |
+      [Свойство связи](link-property), указывающее на сущность(и),
+      от которой исходит связь. Определяет начало отношения.
+  vector:
+    lang:
+    - ru
+- id: link-from
+  private:
+    name: From
+    description: |
+      [Link property](link-property) indicating the entity(ies)
+      from which the link originates. Defines the start of the relationship.
+  vector:
+    lang:
+    - en
+- id: link-to
+  private:
+    name: Назначение
+    description: |
+      [Свойство связи](link-property), указывающее на сущность(и),
+      к которой направлена связь. Определяет конец отношения.
+  vector:
+    lang:
+    - ru
+- id: link-to
+  private:
+    name: To
+    description: |
+      [Link property](link-property) indicating the entity(ies)
+      to which the link is directed. Defines the end of the relationship.
+  vector:
+    lang:
+    - en
+- id: link-type
+  private:
+    name: Тип связи
+    description: |
+      [Свойство связи](link-property), определяющее семантику отношения
+      между источником и назначением (например, наследование, вложение).
+  vector:
+    lang:
+    - ru
+- id: link-type
+  private:
+    name: Link Type
+    description: |
+      [Link property](link-property) defining the semantics of the relationship
+      between source and target (e.g., inheritance, containment).
+  vector:
+    lang:
+    - en
+- id: link-context
+  private:
+    name: Контекст связи
+    description: |
+      [Свойство связи](link-property), определяющее условия, при которых
+      данная связь актуальна или видима (например, языковой контекст).
+  vector:
+    lang:
+    - ru
+- id: link-context
+  private:
+    name: Link Context
+    description: |
+      [Link property](link-property) defining the conditions under which
+      this link is relevant or visible (e.g., language context).
+  vector:
+    lang:
+    - en
+- id: epl
+  private:
+    name: EPL
+    description: |
+      Entity-Property-Link - meta-model for building ontologies through
+      [entities](entity), [properties](property) and [links](link).
+  vector:
+    lang:
+    - en
+- id: epl
+  private:
+    name: EPL
+    description: |
+      Entity-Property-Link - метамодель для построения онтологий через
+      [сущности](entity), [свойства](property) и [связи](link).
+  vector:
+    lang:
+    - ru
+- id: entity-property
+  private:
+    name: Свойство сущности
+    description: |
+      Базовый тип [атрибута](property), который может быть присвоен
+      [сущности](entity) для её описания. Определяет структуру метаданных.
+  vector:
+    lang:
+    - ru
+- id: entity-property
+  private:
+    name: Entity Property
+    description: |
+      Base type of [attribute](property) that can be assigned to an
+      [entity](entity) for its description. Defines metadata structure.
+  vector:
+    lang:
+    - en
+- id: entity-property-name
+  private:
+    name: Название
+    description: |
+      Основное максимально короткое идентифицирующее свойство сущности. Может
+      содержать имя или аббревиатуру. Используется для ссылок и поиска.
+  vector:
+    lang:
+    - ru
+- id: entity-property-name
+  private:
+    name: Name
+    description: |
+      Primary minimal identifying property of an entity. May contain
+      a name or abbreviation. Used for references and search.
+  vector:
+    lang:
+    - en
+- id: entity-property-description
+  private:
+    name: Описание
+    description: |
+      Развернутое текстовое определение сущности или расшифровка аббревиатуры.
+      Не должно включать слова, используемые в атрибуте [](entity-property-name).
+      Даёт смысловое понимание.
+  vector:
+    lang:
+    - ru
+- id: entity-property-description
+  private:
+    name: Description
+    description: |
+      Extended textual definition of an entity or abbreviation explanation.
+      Should not include words used in the [](entity-property-name) attribute.
+      Provides semantic understanding.
+  vector:
+    lang:
+    - en
+- id: entity-property-content
+  private:
+    name: Содержание
+    description: |
+      Основная информационная нагрузка сущности. Может содержать структурированные
+      данные, текст, разметку или вложенные элементы. Несёт основную ценность.
+  vector:
+    lang:
+    - ru
+- id: entity-property-content
+  private:
+    name: Content
+    description: |
+      Main informational payload of an entity. May contain structured
+      data, text, markup, or nested elements. Carries primary value.
+  vector:
+    lang:
+    - en
+- id: archcode-card
+  private:
+    name: Карточка сущности
+    description: |
+      Документ с описанием [](entity&lang=ru&gram-case=gen) для
+      [](epl)-моделей. Строится из онтологические сущности на основе шаблона в
+      структурированные карточки документации фомата [](md).
+    content: f:./index.md
+  vector:
+    lang:
+    - ru
+- id: archcode-card
+  private:
+    name: Archcode Card
+    description: |
+      A document describing an [](entity&lang=en) for
+      [](epl)-models. Built from ontological entities based on a template into
+      structured documentation cards in [](md) format.
+    content: f:./index.md
+  vector:
+    lang:
+    - en
+- id: archcode-intro
+  private:
+    name: Вступление в archcode
+    description: |
+      Документ предоставляет базовую информацию по archcode.
+    hint: Документ с описанием archchcode
+    content: ~
+- id: archcode-editor
+  public:
+    name: Редактор archcode
+    description: |
+      [](role) вносящего изменения в документацию [](archcode).
+- id: archcode
+  public:
+    name: Archcode
+    description: |
+      Генератор документации из [](epl) моделей.
+- id: archcode-licence
+  private:
+    name: Лицензия archcode
+    hint: Лицензионное соглашение archchcode
+    description: |
+      Документ предоставляет лицензионное соглашение [](archcode).
+- id: archcode-format
+  public:
+    name: Форматы исходников archcode
+    description: |
+      Перечень форматов документов, используемый в [](archcode). К таковым
+      относятся [](md), [](yaml), [](json), [](svg), [](dot). Допустимо
+      использование любых инфых форматов `plantext`.
+- id: svg
+  public:
+    name: svg
+    description: |
+      Плантекст формат векторной графики.
+- id: json
+  public:
+    name: json
+- id: yaml
+  public:
+    name: yaml
+    description: |
+      См https://en.wikipedia.org/wiki/YAML
+- id: md
+  public:
+    name: md
+    description: |
+      Текстовый формат plantext для документирования.
+- id: dot
+  public:
+    name: dot
+    description: |
+      Текстовый формат представления графических диаграмм и графов
+      https://ru.wikipedia.org/wiki/DOT_(%D1%8F%D0%B7%D1%8B%D0%BA)
+- id: data
+  private:
+    name: Данные
+    description: |
+      [](information), представленная в формализованном виде, пригодном для
+      обработки, передачи и интерпретации.
+- id: dac
+  public:
+    name: DaC
+    description: |
+      Документация как код, пишется в текстовых форматах (Markdown,
+      reStructuredText, AsciiDoc).
+- id: file
+  private:
+    name: Файл
+    description: |
+      Фрагмент информации, размещенной на каком либо носителе,
+      обладающий [атрибутами](attribute) размера и наименования.
+      Опиционально файлы могут быть типизированы.
+- id: attribute
+  private:
+    name: Атрибут
+    description: |
+      Описание свойства сущности.
+- id: code
+  private:
+    name: Данные
+    description: |
+      Код — это набор инструкций, написанных на формальном языке
+      программирования, который может быть выполнен компьютером для решения
+      определённой задачи.
+- id: wiki
+  public:
+    name: wiki
+    description: |
+      Програмное обеспечение для совместного редактирования документов с
+      возможностью публикации.
+- id: git
+  public:
+    name: git
+    description: |
+      Програмное обеспечение для версионирования [файлов](file).
+- id: software
+  public:
+    name: Software
+    description: |
+      Программное обеспечение — исполняемый артефакт, созданный для
+      автоматизации процессов или обработки информации.
+- id: b-process
+  public:
+    name: Business Process
+    description: |
+      A defined sequence of [actions](process) to achieve a business goal.
+      Describes work flows, roles, events, and outcomes.
+  vector:
+    lang:
+    - en
+- id: b-process
+  public:
+    name: Бизнес-процесс
+    description: |
+      Установленная последовательность [действий](process) для достижения
+      бизнес-цели. Описывает потоки работ, роли, события и результаты.
+  vector:
+    lang:
+    - ru
+- id: b-entity
+  public:
+    name: Business Entity
+    description: |
+      A conceptual unit in business modeling representing a resource,
+      product, contract, or other element of business architecture.
+  vector:
+    lang:
+    - en
+- id: b-entity
+  public:
+    name: Бизнес сущность
+    description: |
+      Концептуальная единица в бизнес-моделировании, представляющая
+      ресурс, продукт, контракт или иной элемент бизнес-архитектуры.
+  vector:
+    lang:
+    - ru
+- id: gram-number
+  private:
+    name: Grammatical number
+    description: Grammatical category denoting quantity.
+  vector:
+  - lang: en
+- id: gram-number
+  private:
+    name: Число
+    description: Грамматическая категория, обозначающая количество.
+  vector:
+  - lang: ru
+- id: singular
+  private:
+    name: Singular
+    description: One entity or item.
+  vector:
+  - lang: en
+- id: singular
+  private:
+    name: Единственное
+    description: Один предмет или сущность.
+  vector:
+  - lang: ru
+- id: plural
+  private:
+    name: Plural
+    description: Two or more entities.
+  vector:
+  - lang: en
+- id: plural
+  private:
+    name: Множественное
+    description: Два или более предмета.
+  vector:
+  - lang: ru
+- id: dual
+  private:
+    name: Dual
+    description: Exactly two entities.
+  vector:
+  - lang: en
+- id: dual
+  private:
+    name: Двойственное
+    description: Ровно два предмета.
+  vector:
+  - lang: ru
+- id: lang
+  private:
+    name: Language
+    description: |
+      [](vector-component) for linguistic localization of entity properties.
+      Defines human-readable names and descriptions.
+  vector:
+    lang:
+    - en
+- id: lang
+  private:
+    name: Язык
+    description: |
+      [](vector-component) для лингвистической локализации свойств сущностей.
+      Определяет человеко-читаемые имена и описания.
+  vector:
+    lang:
+    - ru
+- id: en
+  private:
+    name: English
+    description: |
+      [](lang) variant using Latin script.
+  vector:
+    lang:
+    - en
+- id: en
+  private:
+    name: Английский
+    description: |
+      [](lang) вариант с использованием латинского алфавита.
+  vector:
+    lang:
+    - ru
+- id: ru
+  private:
+    name: Russian
+    description: |
+      [](lang) variant using Cyrillic script.
+  vector:
+    lang:
+    - en
+- id: ru
+  private:
+    name: Русский
+    description: |
+      [](lang) вариант с использованием кириллицы.
+  vector:
+    lang:
+    - ru
+- id: gram-case
+  private:
+    name: Grammatical case
+    description: |
+      Grammatical category expressing syntactic role of a noun.
+      Defined by [ISO 24610-1](@iso-24610-1) as feature `Case`.
+  public:
+    iso: 24610-1
+  vector:
+    lang:
+    - en
+- id: gram-case
+  private:
+    name: Падеж
+    description: |
+      Грамматическая категория, выражающая синтаксическую роль имени.
+      Определена в [ISO 24610-1](@iso-24610-1) как признак `Case`.
+  vector:
+    lang:
+    - ru
+- id: nom
+  private:
+    name: Nominative
+    description: Case of the subject, naming the entity. ISO `Nom`.
+  public:
+    iso: Nom
+  vector:
+    lang:
+    - en
+- id: nom
+  private:
+    name: Именительный
+    description: |
+      Падеж подлежащего, называющий предмет. ISO `Nom`.
+      Пример: *Кто/что?* — **томат**, **дом**, **идея**.
+  vector:
+    lang:
+    - ru
+- id: gen
+  private:
+    name: Genitive
+    description: Case of possession, partitive and absence. ISO `Gen`.
+  public:
+    iso: Gen
+  vector:
+    lang:
+    - en
+- id: gen
+  private:
+    name: Родительный
+    description: |
+      Падеж принадлежности, части и отсутствия. ISO `Gen`.
+      Пример: *Кого/чего?* — **томата**, **дома**, **идеи**.
+  vector:
+    lang:
+    - ru
+- id: dat
+  private:
+    name: Dative
+    description: Case of the indirect object, recipient. ISO `Dat`.
+  public:
+    iso: Dat
+  vector:
+    lang:
+    - en
+- id: dat
+  private:
+    name: Дательный
+    description: |
+      Падеж адресата действия. ISO `Dat`.
+      Пример: *Кому/чему?* — **томату**, **дому**, **идее**.
+  vector:
+    lang:
+    - ru
+- id: acc
+  private:
+    name: Accusative
+    description: Case of the direct object. ISO `Acc`.
+  public:
+    iso: Acc
+  vector:
+    lang:
+    - en
+- id: acc
+  private:
+    name: Винительный
+    description: |
+      Падеж прямого объекта. ISO `Acc`.
+      Пример: *Кого/что?* — **томат**, **дом**, **идею**.
+  vector:
+    lang:
+    - ru
+- id: ins
+  private:
+    name: Instrumental
+    description: Case of instrument or means. ISO `Ins`.
+  public:
+    iso: Ins
+  vector:
+    lang:
+    - en
+- id: ins
+  private:
+    name: Творительный
+    description: |
+      Падеж орудия или средства действия. ISO `Ins`.
+      Пример: *Кем/чем?* — **томатом**, **домом**, **идеей**.
+  vector:
+    lang:
+    - ru
+- id: loc
+  private:
+    name: Locative
+    description: Case of location. ISO `Loc`.
+  public:
+    iso: Loc
+  vector:
+    lang:
+    - en
+- id: loc
+  private:
+    name: Местный
+    description: |
+      Падеж места. ISO `Loc`.
+      Пример: *О ком/о чём?* — **о томате**, **о доме**, **об идее**.
+  vector:
+    lang:
+    - ru
+- id: voc
+  private:
+    name: Vocative
+    description: Case of address. ISO `Voc`.
+  public:
+    iso: Voc
+  vector:
+    lang:
+    - en
+- id: voc
+  private:
+    name: Звательный
+    description: |
+      Падеж обращения. ISO `Voc`.
+      Пример: *О!* — **томате!**, **доме!**, **идее!**.
+  vector:
+    lang:
+    - ru
+- id: par
+  private:
+    name: Partitive
+    description: Case of partial object. ISO `Par`.
+  public:
+    iso: Par
+  vector:
+    lang:
+    - en
+- id: par
+  private:
+    name: Частичный
+    description: |
+      Падеж частичного объекта. ISO `Par`.
+      Пример: *Часть чего?* — **томату**, **дому**, **идею**.
+  vector:
+    lang:
+    - ru
+- id: ess
+  private:
+    name: Essive
+    description: Case of temporary state. ISO `Ess`.
+  public:
+    iso: Ess
+  vector:
+    lang:
+    - en
+- id: ess
+  private:
+    name: Состоятельный
+    description: |
+      Падеж временного состояния. ISO `Ess`.
+      Пример: *В качестве кого/чего?* — **томатом**, **домом**, **идеей**.
+  vector:
+    lang:
+    - ru
+- id: tra
+  private:
+    name: Translative
+    description: Case of change into something. ISO `Tra`.
+  public:
+    iso: Tra
+  vector:
+    lang:
+    - en
+- id: tra
+  private:
+    name: Превратительный
+    description: |
+      Падеж превращения. ISO `Tra`.
+      Пример: *Превратиться в кого/во что?* — **в томат**, **в дом**, **в идею**.
+  vector:
+    lang:
+    - ru
+- id: com
+  private:
+    name: Comitative
+    description: Case of accompaniment. ISO `Com`.
+  public:
+    iso: Com
+  vector:
+    lang:
+    - en
+- id: com
+  private:
+    name: Совместный
+    description: |
+      Падеж совместности. ISO `Com`.
+      Пример: *Вместе с кем/чем?* — **с томатом**, **с домом**, **с идеей**.
+  vector:
+    lang:
+    - ru
+- id: role
+  public:
+    name: Роль
+    description: |
+      [Информация](information), описывающая функцию или ответственность,
+      которую может выполнять [агент](agent).
+- id: relation
+  private:
+    name: Отношение
+    description: |
+      [](information) о связи или взаимодействии между [сущностями](entity).
+- id: vector
+  public:
+    name: Вектор
+    description: |
+      [Информация](information), определяющая условия или область видимости
+      для [свойств](property) и [связей](link) [сущностей](entity).
+- id: vector-component
+  public:
+    name: Компонент вектора
+    description: |
+      [Информация](information), определяющая пространство [вектора](@vector)
+      или именованную ось. Используется для опредления позиции сущности и поиска
+      сущности в данном пространстве.
+- id: document
+  public:
+    name: Документ
+    description: |
+      Формально описанная [Информация](information). Однозначно
+      идентифицируется.
+- id: in
+  private:
+    name: Вложенность
+    description: |
+      [](link) для отражения вхождения одной сущности в другую.
+- id: link
+  private:
+    name: Связь
+    description: Взаимодействие между сущностями.
+- id: see-also
+  private:
+    name: Смотри так же
+    description: |
+      [](link) ссылка для связи материалов для представления.
+- id: property
+  public:
+    name: Свойство
+    description: |
+      [Информация](information), описывающая характеристику или качество
+      [сущности](entity).
+- id: operator
+  public:
+    name: Оператор
+    description: |
+      Описание преобразования аргументов в результат.
+- id: concept
+  public:
+    name: Концепция
+    description: |
+      Идея определяющая главный замысел, принципы и границы понимания
+      какого-либо предмета, явления, проекта или области знаний,
+      зафиксированная в виде документа или описания.
+- id: metamodel
+  public:
+    name: Метамодель
+    description: |
+      [Информация](information), описывающая структуру и правила онтологии.
+- id: information
+  private:
+    name: Информация
+    description: |
+      Абстракция, отражающая состояния [сущностей](entity).
+      Существует только в контексте конкретной сущности.
+- id: process
+  private:
+    name: Процесс
+    description: Последовательность изменений состояния [сущностей](entity). Преобразует
+      [информацию](information) и/или [объекты](object).
+- id: deity
+  public:
+    name: Божество
+    description: |
+      Высший [агент](agent) с сверхъестественными способностями.
+- id: person
+  public:
+    name: Человек
+    description: |
+      [Агент](agent), обладающий сознанием волей и персональной информацией.
+- id: ai
+  public:
+    name: ИИ
+    description: |
+      Искусственный интеллект, артифактный [Агент](agent),
+      способный к автономным действиям.
+- id: organization
+  public:
+    name: Организация
+    description: |
+      [Агент](agent), состоящий из других агентов, действующих как целое.
+- id: animal
+  public:
+    name: Животное
+    description: |
+      [Агент](agent) биологического происхождения с ограниченной волей.
+- id: agent
+  private:
+    name: Агент
+    description: |
+      [Сущность](entity) с возможностью инициативы и воздействия на
+      [объекты](object).
+- id: artifact
+  public:
+    name: Артефакт
+    description: |
+      Искусственно созданный [объект](object), продукт человеческой деятельности.
+      Включает инструменты, документы, программное обеспечение, сооружения.
+- id: object
+  private:
+    name: Объект
+    description: |
+      [Сущность](entity), идентифицируемая как физический или виртуальный
+      факт. Существует, но не обладает собственной волей, являясь пассивным
+      носителем [информации](information).
+- id: entity
+  public:
+    hyperlink: f:./hyperlink.md
+    card: f:./ru/card.md
+    empty-property: '`...`'
+- id: entity
+  private:
+    name: Сущность
+    description: |
+      Базовая самоописывающаяся идентифицируемая сущность.
+      Порождает все иные понятия и сущности через их типизацию.
+    content: f:./ru/content.md
+  vector:
+    lang:
+    - ru
+- id: entity
+  private:
+    name: Сущности
+    description: p:&lang=ru
+    content: p:&lang=ru
+  vector:
+    lang:
+    - ru
+    gram-number:
+    - plural
+l:
+- from:
+  - archcode-rule-inheritance
+  - archcode-rule-property
+  to:
+  - archcode-rule-inheritance
+  - archcode-rule-property
+  type: see-also
+- from: archcode-rule-design
+  to:
+  - archcode-rule-design-minimalism
+  - archcode-rule-design-conciseness
+  - archcode-rule-design-self-description
+  - archcode-rule-design-declarative
+  - archcode-rule-design-extensibility
+  - archcode-rule-design-distribution
+  type: in
+- from: epl
+  to:
+  - entity
+  - property
+  - link
+  - object
+  - agent
+  - information
+  - process
+  type: see-also
+- from: archcode-editor
+  to: archcode
+  type: see-also
+- from: archcode
+  to: archcode-licence
+  type: see-also
+- from: archcode-licence
+  to: archcode
+  type: see-also
+- from: archcode-format
+  to: svg md yaml json dot
+  type: see-also
+- from: md
+  to: git
+  type: see-also
+...
