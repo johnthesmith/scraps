@@ -4,7 +4,7 @@
 
 ---
 
-Документ предоставляет лицензионное соглашение `unknown-link:archcode`.
+Документ предоставляет лицензионное соглашение [Archcode](/arch-dest/entities/archcode/default.md "").
 
 
 ---

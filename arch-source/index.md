@@ -1,16 +1,6 @@
 # Archcode - архитектура как код
 
-1. [test1](./doc/doc.md)
-2. [test2](doc/doc.md)
-3. [test3](./test.md#chapter)
-
-
-
-
-
-
-
-Ресурс содержит документацию как код на основе[](epl). 
+Ресурс содержит [](dac) на основе модели [](epl).
 [](archcode-editor) пишут исходники документов в различных 
 [форматах](archcode-format), включая в них ссылки на [](entity&gram-number=plural).
 
@@ -25,7 +15,9 @@
 2. [](archcode-format)
 3. [](archcode-licence)
 
+---
 
+Момент сборки: %moment%
+[Сборочная информация](%debug-file%)
 
-[](archcode-card)
 

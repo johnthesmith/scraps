@@ -1,0 +1,9 @@
+e:
+  data: information
+p:
+  - id: data
+    private:
+      name: Данные
+      description: |
+        [](information), представленная в формализованном виде, пригодном для
+        обработки, передачи и интерпретации.
