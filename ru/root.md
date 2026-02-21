@@ -1,4 +1,4 @@
-# rootобщи
+# root
 
 [en](../en/root.md)
 
@@ -13,5 +13,3 @@
 ```
 dig +short TXT _root-base64-gzip.catlair.net | tr -d '"' | base64 --decode | gunzip
 ```
-
-k
