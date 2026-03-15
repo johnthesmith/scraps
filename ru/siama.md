@@ -26,6 +26,13 @@
 сигнал на исполнение Прецептору.
 
 ![](../images/siama/fig1.png)
+![](../images/siama/fig2.png)
+![](../images/siama/fig3.png)
+![](../images/siama/fig4.png)
+![](../images/siama/fig5.png)
+![](../images/siama/fig6.png)
+![](../images/siama/fig7.png)
+
 
 > **Термины** 
 > Прецептор и Инцептор введены для явного указания на конкретные 
