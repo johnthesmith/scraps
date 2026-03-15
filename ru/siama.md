@@ -109,7 +109,6 @@ host:port).
 ![](../images/siama/fig2.png)
 
 
-## Dispatcher
 
 ## Dispatcher
 
