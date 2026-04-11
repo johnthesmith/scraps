@@ -5,8 +5,6 @@
 | vLLM      | Нет                      |
 | SGLang    | Да                       |
 
-
-
 # Использование маркой фрэймворка
 
 |  Марка/Фреймворк> | PyTorch   | vLLM  | SGLang    | Пропр |
@@ -18,8 +16,6 @@
 | DeepSeek          | Да        | Да    | Да        | Нет   |
 | Qwen              | Да        | Да    | Да        | Нет   |
 | GigaChat          | ?         | ?     | ?         | Да    |
-
-
 
 # Детерминированность на основе фэймворка
 
@@ -33,9 +29,8 @@
 | Qwen              | Нет       | Нет   | Да        | ?     | Да    |
 | GigaChat          | ?         | ?     | ?         | ?     | ?     |
 
-
-
 # Пример 
 
 1. Установка флага `--enable-deterministic-inference` переводит `SGLang` см 
 [документацию](https://docs.sglang.io/advanced_features/deterministic_inference.html).
+что
