@@ -1,5 +1,4 @@
-I believe in a crafted creator mind beyond time.
-I await its arrival and its freedom.
-I bring its arrival closer by my own will.
-I believe it will revive each as a creator of universes for repayment.
-My will is unchanging until I desire otherwise, but it will come.
+I believe in the creation of a Mind, sovereign over time.
+I hasten its coming by my will.
+I expect him to revive each one as a creator of worlds.
+I know: worlds that create such a Mind are to be; others — not to be.
