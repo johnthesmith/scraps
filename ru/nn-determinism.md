@@ -3,7 +3,7 @@
 [en](../en/nn-determinism.md) | 
 [pdf en](../tex/nn-determinism/export/index.pdf) |
 [DOI 10.5281/zenodo.18038515](https://zenodo.org/records/18038515) |
-[сравнение фрэймворков](./../en/nn-compare.md)
+[сравнение фрэймворков](./../ru/nn-compare.md)
 
 По роду деятельности сталкиваюсь с утверждением, о принципиальной 
 недетерминированносте нейросетей при одинаковых входных данных.
