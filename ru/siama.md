@@ -187,8 +187,12 @@ host:port).
 
 # Общая схема взаимодействия
 
-
 ![](../images/siama/fig6.png)
+
+
+# Взаимодействие payload
+
+![](../images/siama/fig9.png)
 
 
 
