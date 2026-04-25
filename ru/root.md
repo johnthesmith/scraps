@@ -10,5 +10,5 @@
 ---
 
 ```
-dig +short TXT _root-base64-gzip.catlair.net | tr -d '"' | base64 --decode | gunzip
+dig +short TXT _root.catlair.net | tr -d '"'
 ```
