@@ -3,6 +3,7 @@
 [en](../en/nn-determinism.md) | 
 [pdf en](../tex/nn-determinism/export/index.pdf) |
 [DOI 10.5281/zenodo.18038515](https://zenodo.org/records/18038515) |
+[habr](https://habr.com/ru/companies/docdoc/articles/1023416/) |
 [сравнение фрэймворков](./../ru/nn-compare.md)
 
 По роду деятельности сталкиваюсь с утверждением, о принципиальной 

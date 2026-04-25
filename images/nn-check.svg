@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="nn-check.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="4"
+     inkscape:cx="118.5"
+     inkscape:cy="203"
+     inkscape:window-width="1914"
+     inkscape:window-height="999"
+     inkscape:window-x="0"
+     inkscape:window-y="22"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid694" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow2"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Arrow2"
+       markerWidth="7.6999998"
+       markerHeight="5.5999999"
+       viewBox="0 0 7.7 5.6"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.7)"
+         d="M -2,-4 9,0 -2,4 c 2,-2.33 2,-5.66 0,-8 z"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:none"
+         id="arrow2L" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:none;stroke-width:0.0999998;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="rect1249"
+       width="59.531246"
+       height="39.587502"
+       x="5.2916665"
+       y="35.768749" />
+    <path
+       style="fill:#ff6600;stroke-width:0.1;stroke-linejoin:bevel;paint-order:stroke fill markers;stroke-dasharray:none;marker-end:url(#Arrow2);stroke:#000000"
+       d="M 11.90625,71.437499 V 42.333333"
+       id="path809" />
+    <path
+       style="fill:#ff6600;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:none;marker-end:url(#Arrow2);paint-order:stroke fill markers"
+       d="m 11.90625,71.437499 44.979167,10e-7"
+       id="path1144"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#008000;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+       d="m 10.583333,68.791667 c 0,0 27.62329,-0.977201 33.072917,-3.96875 5.449627,-2.991549 5.117979,-8.973385 6.392498,-14.726089 1.274518,-5.752704 6.206609,-7.81192 6.206609,-7.81192"
+       id="path2848"
+       sodipodi:nodetypes="czzc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+       x="32.56752"
+       y="69.276398"
+       id="text2953"><tspan
+         sodipodi:role="line"
+         id="tspan2951"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#008000;fill-opacity:1;stroke:none;stroke-width:0.1"
+         x="32.56752"
+         y="69.276398">T</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#ff6600;stroke:none;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+       x="31.925695"
+       y="54.724312"
+       id="text3814"><tspan
+         sodipodi:role="line"
+         id="tspan3812"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#ff6600;stroke:none;stroke-width:0.1"
+         x="31.925695"
+         y="54.724312">N1</tspan></text>
+    <path
+       style="fill:none;stroke:#ff6600;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+       d="m 10.31875,70.114583 c 5.291667,-1.322916 11.419042,-4.938923 16.139583,-7.9375 4.720541,-2.998577 10.583333,-9.260417 18.520834,-13.229166 7.937501,-3.968749 11.906249,-3.968751 11.906249,-3.968751"
+       id="path3816"
+       sodipodi:nodetypes="cssc" />
+    <path
+       style="fill:none;stroke:#00ccff;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers"
+       d="m 10.583333,71.4375 c 7.14375,-2.116667 12.67628,-4.649972 18.520834,-7.9375 5.844554,-3.287528 9.02333,-5.291666 14.552083,-11.90625 5.528753,-6.614584 10.079354,-6.927973 12.685219,-7.475088"
+       id="path3868"
+       sodipodi:nodetypes="czzc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:0.3,0.3;paint-order:stroke fill markers;stroke-dashoffset:0"
+       d="m 47.624999,71.437499 v -23.8125"
+       id="path3933" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:0.60000001, 0.60000001;paint-order:stroke fill markers;stroke-dashoffset:0"
+       d="M 11.90625,44.979166 H 56.885416"
+       id="path3935" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.11667px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#00ccff;stroke:none;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:stroke fill markers;fill-opacity:1"
+       x="32.071426"
+       y="63.748051"
+       id="text3943"><tspan
+         sodipodi:role="line"
+         id="tspan3941"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#00ccff;stroke:none;stroke-width:0.1;fill-opacity:1"
+         x="32.071426"
+         y="63.748051">N2</tspan></text>
+    <ellipse
+       style="fill:#d40000;stroke:none;stroke-width:0.0999996;stroke-linejoin:bevel;stroke-dasharray:0.3, 0.3;stroke-dashoffset:0;paint-order:stroke fill markers"
+       id="path3997"
+       cx="47.625"
+       cy="47.625"
+       rx="0.26458371"
+       ry="0.26458409" />
+    <ellipse
+       style="fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-linejoin:bevel;stroke-dasharray:0.3, 0.3;stroke-dashoffset:0;paint-order:stroke fill markers"
+       id="ellipse4277"
+       cx="51.59375"
+       cy="46.302082"
+       rx="0.26458371"
+       ry="0.26458409" />
+    <ellipse
+       style="fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-linejoin:bevel;stroke-dasharray:0.3, 0.3;stroke-dashoffset:0;paint-order:stroke fill markers"
+       id="ellipse4348"
+       cx="14.816667"
+       cy="68.527084"
+       rx="0.26458371"
+       ry="0.26458409" />
+    <ellipse
+       style="fill:#00ccff;fill-opacity:1;stroke:none;stroke-width:0.0999996;stroke-linejoin:bevel;stroke-dasharray:0.3, 0.3;stroke-dashoffset:0;paint-order:stroke fill markers"
+       id="ellipse4350"
+       cx="19.579166"
+       cy="68.262497"
+       rx="0.26458371"
+       ry="0.26458409" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:0.6, 0.6;stroke-dashoffset:0;paint-order:stroke fill markers"
+       d="M 11.90625,58.158333 H 56.885416"
+       id="path4977" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.04945px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#000000;stroke:none;stroke-width:0.0999999;stroke-linejoin:bevel;stroke-dasharray:0.6, 0.6;stroke-dashoffset:0;paint-order:stroke fill markers"
+       x="8.4548826"
+       y="58.193474"
+       id="text4981"><tspan
+         sodipodi:role="line"
+         id="tspan4979"
+         style="fill:#000000;stroke:none;stroke-width:0.0999999"
+         x="8.4548826"
+         y="58.193474">0.5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.04945px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#000000;stroke:none;stroke-width:0.0999999;stroke-linejoin:bevel;stroke-dasharray:0.6, 0.6;stroke-dashoffset:0;paint-order:stroke fill markers"
+       x="8.4548826"
+       y="44.964306"
+       id="text5087"><tspan
+         sodipodi:role="line"
+         id="tspan5085"
+         style="fill:#000000;stroke:none;stroke-width:0.0999999"
+         x="8.4548826"
+         y="44.964306">1.0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.04945px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#000000;stroke:none;stroke-width:0.0999999;stroke-linejoin:bevel;stroke-dasharray:0.6, 0.6;stroke-dashoffset:0;paint-order:stroke fill markers"
+       x="8.4548826"
+       y="71.422638"
+       id="text5091"><tspan
+         sodipodi:role="line"
+         id="tspan5089"
+         style="fill:#000000;stroke:none;stroke-width:0.0999999"
+         x="8.4548826"
+         y="71.422638">0.0</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.04945px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#000000;stroke:none;stroke-width:0.0999999;stroke-linejoin:bevel;stroke-dasharray:0.6, 0.6;stroke-dashoffset:0;paint-order:stroke fill markers"
+       x="47.555824"
+       y="72.74556"
+       id="text5835"><tspan
+         sodipodi:role="line"
+         id="tspan5833"
+         style="fill:#000000;stroke:none;stroke-width:0.0999999"
+         x="47.555824"
+         y="72.74556">x'</tspan></text>
+    <ellipse
+       style="fill:#008000;stroke:none;stroke-width:0.0999996;stroke-linejoin:bevel;stroke-dasharray:0.3, 0.3;stroke-dashoffset:0;paint-order:stroke fill markers"
+       id="ellipse8057"
+       cx="47.625"
+       cy="60.589584"
+       rx="0.26458371"
+       ry="0.26458409" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.04945px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#008000;stroke:none;stroke-width:0.0999999;stroke-linejoin:bevel;stroke-dasharray:0.6, 0.6;stroke-dashoffset:0;paint-order:stroke fill markers"
+       x="38.314457"
+       y="60.854168"
+       id="text8061"><tspan
+         sodipodi:role="line"
+         id="tspan8059"
+         style="fill:#008000;stroke:none;stroke-width:0.0999999"
+         x="38.314457"
+         y="60.854168">T(x')&lt;0.5~false</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.04945px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#d40000;stroke:none;stroke-width:0.0999999;stroke-linejoin:bevel;stroke-dasharray:0.6, 0.6;stroke-dashoffset:0;paint-order:stroke fill markers"
+       x="33.765133"
+       y="47.486645"
+       id="text8065"><tspan
+         sodipodi:role="line"
+         id="tspan8063"
+         style="fill:#d40000;stroke:none;stroke-width:0.0999999"
+         x="33.765133"
+         y="47.486645">N1(x')=N2(x')&gt;0.5~true</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:0.3, 0.3;stroke-dashoffset:0;paint-order:stroke fill markers"
+       d="M 14.816667,71.437497 V 68.527081"
+       id="path8067" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.04945px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#ff6600;stroke:none;stroke-width:0.0999999;stroke-linejoin:bevel;stroke-dasharray:0.6, 0.6;stroke-dashoffset:0;paint-order:stroke fill markers"
+       x="14.011133"
+       y="72.74556"
+       id="text8071"><tspan
+         sodipodi:role="line"
+         id="tspan8069"
+         style="fill:#ff6600;stroke:none;stroke-width:0.0999999"
+         x="14.011133"
+         y="72.74556">D1-1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.04945px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#00ccff;stroke:none;stroke-width:0.0999999;stroke-linejoin:bevel;stroke-dasharray:0.6, 0.6;stroke-dashoffset:0;paint-order:stroke fill markers;fill-opacity:1"
+       x="18.417835"
+       y="72.74556"
+       id="text8075"><tspan
+         sodipodi:role="line"
+         id="tspan8073"
+         style="fill:#00ccff;stroke:none;stroke-width:0.0999999;fill-opacity:1"
+         x="18.417835"
+         y="72.74556">D2-1</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.0999999;stroke-linejoin:bevel;stroke-dasharray:0.3, 0.3;stroke-dashoffset:0;paint-order:stroke fill markers"
+       d="m 19.579166,71.437497 v -3.175"
+       id="path8077" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.04945px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#ff6600;stroke:none;stroke-width:0.0999999;stroke-linejoin:bevel;stroke-dasharray:0.6, 0.6;stroke-dashoffset:0;paint-order:stroke fill markers"
+       x="49.433018"
+       y="72.760414"
+       id="text8081"><tspan
+         sodipodi:role="line"
+         id="tspan8079"
+         style="fill:#ff6600;stroke:none;stroke-width:0.0999999"
+         x="49.433018"
+         y="72.760414">D1-2</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.04945px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#00ccff;fill-opacity:1;stroke:none;stroke-width:0.0999999;stroke-linejoin:bevel;stroke-dasharray:0.6, 0.6;stroke-dashoffset:0;paint-order:stroke fill markers"
+       x="52.813667"
+       y="72.760414"
+       id="text8085"><tspan
+         sodipodi:role="line"
+         id="tspan8083"
+         style="fill:#00ccff;fill-opacity:1;stroke:none;stroke-width:0.0999999"
+         x="52.813667"
+         y="72.760414">D2-2</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:0.3, 0.3;stroke-dashoffset:0;paint-order:stroke fill markers"
+       d="M 51.59375,71.437502 V 46.302084"
+       id="path8087" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:0.3, 0.3;stroke-dashoffset:0;paint-order:stroke fill markers"
+       d="M 52.652084,71.437502 V 44.929167"
+       id="path8089" />
+    <ellipse
+       style="fill:#00ccff;stroke:none;stroke-width:0.0999996;stroke-linejoin:bevel;stroke-dasharray:0.3, 0.3;stroke-dashoffset:0;paint-order:stroke fill markers;fill-opacity:1"
+       id="ellipse3999"
+       cx="52.652084"
+       cy="44.979168"
+       rx="0.26458371"
+       ry="0.26458409" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.2377px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:0.3, 0.3;stroke-dashoffset:0;paint-order:stroke fill markers"
+       x="9.1480083"
+       y="39.398621"
+       id="text11607"><tspan
+         sodipodi:role="line"
+         id="tspan11605"
+         style="fill:#000000;stroke:none;stroke-width:0.1"
+         x="9.1480083"
+         y="39.398621">result∈ℝ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.2377px;line-height:1;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans';fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:0.3, 0.3;stroke-dashoffset:0;paint-order:stroke fill markers"
+       x="58.442013"
+       y="71.863762"
+       id="text19171"><tspan
+         sodipodi:role="line"
+         id="tspan19169"
+         style="fill:#000000;stroke:none;stroke-width:0.1"
+         x="58.442013"
+         y="71.863762">arg∈ℝ</tspan></text>
+  </g>
+</svg>
