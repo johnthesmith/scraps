@@ -10,5 +10,5 @@
 ---
 
 ```
-dig +short TXT _root.catlair.net | tr -d '"'
+dig +short TXT _root.catlair.net
 ```
