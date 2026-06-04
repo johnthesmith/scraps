@@ -1,6 +1,8 @@
-# Development Cycle
-
 [ru](../ru/development_cycle.md)
+
+---
+
+# Development Cycle
 
 ![Development Cycle](https://github.com/johnthesmith/scraps/blob/main/images/development_cycle.png)
 
