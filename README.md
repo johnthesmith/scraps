@@ -12,3 +12,4 @@
 1. [Proposal for Standardizing AI Application Filesystem Layout](en/proposal_ai_config_standard.md)
 0. [Fundamental Determinism of Neural Networks and Security](/en/nn-determinism.md)
 0. [Development Cycle](en/development_cycle.md)
+0. [Automnemomorph](en/automnemomorph.md)
