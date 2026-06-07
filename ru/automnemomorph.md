@@ -1,5 +1,5 @@
-[ru](../en/automnemomorph.md)|
-[cli-ai](https://github.com/johnthesmith/ai-cli/blob/main/README.md)|
+[ru](../en/automnemomorph.md) |
+[cli-ai](https://github.com/johnthesmith/ai-cli/blob/main/README.md) |
 [habr](https://habr.com/ru/articles/1043994/)
 
 ---
