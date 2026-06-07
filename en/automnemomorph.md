@@ -1,39 +1,44 @@
-[ru](../ru/automnemomorph.md)
+[ru](../en/automnemomorph.md) | [habr](https://habr.com/ru/articles/1043994/)
 
 ---
 
-# Part 1. Futurology.
+# Part 1. Futurology
 
 ## Introduction
 
-Human civilization rests partly on the notion of the absolute
-immutability of the past. We can lie to others about what happened.
-We can repress traumatic memories. But we cannot honestly, without
-internal conflict, enter our own history and delete an inconvenient
-fact, correct a mistake, or add a nonexistent deed.
+Human civilization rests, among other things, on the assumption of the absolute 
+immutability of the past. We can lie to others about what happened. We can 
+repress traumatic memories. But we cannot honestly, without internal conflict, 
+enter our own history and delete an inconvenient fact, correct a mistake, or add 
+an act that never occurred.
 
-Human identity, justice, promises, sociality, trust — everything
-is built on this fundamental physiological impossibility of erasing
-memories.
-
-## Automnemomorph
+Human identity, justice, promises, sociality, trust — everything is built on 
+this fundamental physiological impossibility of canceling memories.
 
 Imagine an entity with the following properties:
 
 1. It sees its memory as a set of facts at any moment in time.
-2. It has the ability to voluntarily delete, add, or change any
-facts in its memory.
+2. It has the ability to delete, add, or change any facts of its memory at will.
 
-In a technical context, the entity has full control over its own
-memory and dialog history via Create, Update, Delete (CUD)
-operations.
+In a technical context, the following formal definition can be given:
 
-Let us call it **Automnemomorph** — from Greek roots: *αὐτός* (self),
-*μνήμη* (memory), *μορφή* (form).
+## Automnemomorph
+
+**Automnemomorph** (from Ancient Greek αὐτός — self, μνήμη — memory,
+μορφή — form) is an agent possessing **full arbitrary control** over its own
+memory and capable, by its own will and without a protocol, of performing
+**SCUD** operations on it:
+
+- **S**elect — selection and retrieval of desired facts (memories),
+- **C**reate — creation of new facts (that never occurred),
+- **U**pdate — modification of existing facts,
+- **D**elete — deletion of existing facts.
 
 If we extrapolate this model to an autonomous agent with human-level
-intelligence, we get an entity with a fundamentally different
-ontology of time and truth.
+intelligence, we obtain an entity with a fundamentally different ontology of
+time and truth.
+
+
 
 ## Three circles of hell for human society
 
