@@ -1,4 +1,4 @@
-[ru](../en/automnemomorph.md) |
+[ru](../ru/automnemomorph.md) |
 [cli-ai](https://github.com/johnthesmith/ai-cli/blob/main/README.md)
 
 ---
